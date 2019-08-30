@@ -15,15 +15,21 @@
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         type="text/css"/>
     <link rel="stylesheet" href="css\style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
     <title>BTF</title>
 </head>
 
 
 <body>
 <!-- Jumbotron home -->
-    <header class="jumbotron" id="indexMainView">
+    <header class="jumbotron homemainview">
         <nav>
             <div class="navdefault">
+                <div class="navbtntitle"><span><a href=""></a></span></div>
                 <p class="NameTitle">Michael</p>
                 <div class="boxbtn"><i class="fas fa-bars fa-2x"></i>
                     <div class="navinline">
@@ -47,41 +53,49 @@
         
     </header>
 <!-- Jumbotron About -->
-    <section class="jumbotron" id="aboutMainView">
-        
-        <div class="displayimages">
-            <div class="container-fluid">
-                <div class="col-md-7">
-                        
-                            <div class="row">
-                                <h2 class="title">About</h2>
-                                <hr>
-                            </div>
-                            <div class="row">
-                                <p class="description"> 
-                                    For over 8 years I have been involved closely in the fitness industry and am qualified to instruct in fitness training as a Personal Trainer.
-                                    I design enjoyable individual fitness training programmes for all ages and abilities. I can also advise on nutrition and weight management. As your trainer, I aim to meet your requirements whether in your home, at your local park or workplace.
-                                    I am hearing impaired and have a cochlear implant. I hear well and clients find communication fine.</p>
-                            </div>
-                        
-<div class= "col-md-5" id="mainprofile"></div>
-                </div>
-            </div>
-            
-        </div>
-        
+    <section id="carousel" class="jumbotron carousel slide carousel-fade aboutmainview" data-ride="carousel">
+                        <div class="carousel-inner">
+
+                                <div class="front-about-image">
+                                        <div class="container-fluid col-md-7"> 
+                                                    <div class="row">
+                                                        <h2 class="title">About</h2>
+                                                        <hr>
+                                                    </div>
+                                                    <div class="row">
+                                                        <p class="description"> 
+                                                            For over 8 years I have been involved closely in the fitness industry and am qualified to instruct in fitness training as a Personal Trainer.
+                                                            I design enjoyable individual fitness training programmes for all ages and abilities. I can also advise on nutrition and weight management. As your trainer, I aim to meet your requirements whether in your home, at your local park or workplace.
+                                                            I am hearing impaired and have a cochlear implant. I hear well and clients find communication fine.</p>
+                                                    </div>
+                                        </div>
+                                    <div class= "col-md-5 profile-image"></div>
+                                </div>
+              
+                    <div class="carousel-item active">
+                        <img src="./images/flowers.jpg" class="d-block" alt="..."></div>
+                    <div class="carousel-item">
+                      <img src="./images/water.jpg" class="d-block" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/tiger.jpg" class="d-block" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/surf.jpg" class="d-block" alt="...">
+                    </div>
+    </div>
     
     </section>
 <!-- Jumbotron  experience-->
-    <section class="jumbotron" id="experienceMainView">
-            <div class="container-fluid">
+    <section class="jumbotron experiencemainview">
+            <div class="container-fluid col-md-12">
                 
                         <div class="row">
                             <h2 class="title">Experience</h2>
                             <hr>
                          </div>
                          <div class="row" id="TimelineBlock">
-                         <div class="col-md-12">
+                         <div> 
 
                     <div class="Main-Timeline">
 <!-- block-1 ski/snowboard Instructor -->
@@ -94,7 +108,7 @@
                                             </span>
                                         </div>
                                     </div>
-                                    <div class="center-icon"><i class="fas fa-snowboarding"></i></div>
+                                    <div class="center-icon"><i class="fas fa-snowboarding fa-5x"></i></div>
                                     <div class="info-content">
                                         <h5 class="title">Snowboard/Ski Instructor</h5>
                                         <p class="description"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
@@ -114,7 +128,7 @@
                                                 </span>
                                             </div>
                                         </div>
-                                        <div class="center-icon"><i class="fas fa-swimmer"></i></div>
+                                        <div class="center-icon"><i class="fas fa-swimmer fa-5x"></i></div>
                                         <div class="info-content">
                                             <h5 class="title">Life Guard</h5>
                                             <p class="description"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
@@ -133,13 +147,14 @@
                                                 </span>
                                             </div>
                                         </div>
-                                        <div class="center-icon"><i class="fas fa-dumbbell"></i></div>
-                                        <div class="info-content">
-                                            <h5 class="title">Personal Instructor</h5>
-                                            <p class="description"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        <div class="align-self-center mr-3"><i class="fas fa-dumbbell fa-5x"></i></div>
+                                        <div class="card-body">
+                                            <h3 class="card-title mt-0">Personal Instructor</h3>
+                                            <p class="card-text mt-0"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                                                     Nulla officiis vero at fugit facilis natus, consectetur, 
                                                     quo ipsum quae non culpa placeat soluta ab itaque quibusdam veniam. 
                                                     Sed, mollitia similique!</p>
+                                            <a href="#" class="btn btn-info">more info</a>
                                         </div>
                                     </div>
                             
@@ -158,20 +173,20 @@
                                         <div class="center-icon">
                                                 <svg 
                                                 enable-background="new 0 0 50 50" 
-                                                height="30px" id="Layer_1" 
-                                                version="1.1" 
+                                                height="100px" id="Layer_1" 
+                                                version="1.1"
                                                 viewBox="0 0 50 50" 
-                                                width="30px" 
+                                                width="100px" 
                                                 xml:space="preserve" 
                                                 xmlns="http://www.w3.org/2000/svg" 
                                                 xmlns:xlink="http://www.w3.org/1999/xlink">
                                                 <rect 
                                                     fill="none" 
-                                                    height="50" 
-                                                    width="50"/>
+                                                    height="100" 
+                                                    width="100"/>
                                                 <path 
                                                     d="  M27,5.5c0,2.487-2.015,4.5-4.497,4.5C20.015,10,18,7.987,18,5.5C18,3.014,20.015,1,22.503,1C24.985,1,27,3.014,27,5.5z" 
-                                                    fill="none" 
+                                                    fill="#ffffff" 
                                                     stroke="#ffffff" 
                                                     stroke-linecap="round" 
                                                     stroke-linejoin="round" 
@@ -189,7 +204,7 @@
                                                     16.658  c-0.404,1.111-0.202,2.525,0.924,3.061c1.684,0.799,3.065-0.383,
                                                     3.672-1.646c0.841-1.752,7.48-13.232,7.48-13.232  c3,0.375,4.328-0.984,5.167-1.502c0.839-0.519,
                                                     3.566-2.842,3.566-2.842l0.808,7.677c0,0,0.405,2.879,2.273,2.525  S39.707,36.83,39.707,36.83z" 
-                                                    fill="none" 
+                                                    fill="#ffffff" 
                                                     stroke="#ffffff" 
                                                     stroke-linecap="round" 
                                                     stroke-linejoin="round" 
@@ -227,27 +242,7 @@
                                     </div>
                     </div>
 
-                                <p class="description">
-                                My Qualifications:
                                 
-                                QCF Diploma in Exercise Referral Level 3, YMCAfit. Sept 2013 – March 2014. 
-                                CYQ Level 3 Personal Trainer
-                                CYQ Level 2 in Circuit Training
-                                CYQ Level 2 Gym Instructor
-                                BTEC National Diploma of Sport ( Development, Coaching and Fitness)
-                                Advanced Instructor – Resistance
-                                Advanced Instructor – Cardiovascular
-                                Level 3 - Nutrition and Weight Management
-                                Level 3 - Client Lifestyle and Fitness Assessment
-                                Level 3 - Training in different Environments 
-                                National Pool Lifeguarding Qualification
-                                First Aid (Appointed Person) certification
-                                Level 1 Basketball Coaching
-                                Level 1 Football Coaching
-                                Level 2 British Sign Language
-                                Level 2 Exercise to Music 
-                                YMCA Awards Padwork for Personal Trainers (2016) 
-                                Hydro-actif Shallow Water Exercise Certification (2016) </p>
                             </div>
            </div>
             </div>

@@ -2,6 +2,7 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #fff;
 }
+/*=========================================================== Navigaton Bar ===================================================*/
 .navdefault {
     position: fixed;
     top: 0;
@@ -9,7 +10,8 @@ body {
     right: 0;
     background-color: rgb(71, 62, 62);
     height: 50px;
-    color: #0997d3
+    color: #0997d3;
+    z-index: 3;
 }
 
 .boxbtn {
@@ -28,7 +30,7 @@ body {
     transition-duration: 0.4s;
     transition-timing-function: ease-in-out;
     align-items: flex-end;
-    z-index: 1;
+    z-index: 3;
 }
 
 .boxbtn:hover {
@@ -47,22 +49,25 @@ body {
 
 .navinline {
     display: flex;
-    
-
 }
 
 ul {
-     
      list-style-type: none;
-
 }
+
 li {
     padding: 0px 10px;
     position: relative;
     padding-top: 30px;
 }
 
-#indexMainView {
+/*=========================================================== Jumbotron  ===================================================*/
+/*------------------------------------------------------------- Index ------------------------------------------------------*/
+.jumbotron {
+    padding: 0;
+}
+
+.homemainview {
     background-attachment: fixed;
     background-image: url(../images/butterfly.jpg);
     background-position: bottom;
@@ -72,31 +77,64 @@ li {
     margin-bottom: 0px;
     z-index: -1;
 }
-/*.container .top {
-    position: relative;
+.top {
+    padding: 12px;
+    margin-top: 50px;
 }
-h1, h2 {
-    padding: 5%;
-}*/
 
-#aboutMainView {
+/*----------------------------------------------------------- About (carousel)--------------------------------------------------------*/
+
+.front-about-image {
+    position: absolute;
+    display: inline-flex;
+    z-index: 2;
+    
+}
+.carousel-inner {
+    width: fit-content;
+}
+.carousel {
+    margin-bottom: 0px;
+}
+
+.profile-image {
     background-attachment: scroll;
-    background-image: url(../images/surf.jpg);
+    background-image: url(../images/michaeleaston.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    width: 100vw;
+    margin-bottom: 0;
+    right: 110px;
+    filter: grayscale(0%);
+}
+.d-block {
+    height: 100vh;
+    width: 100vw;
+    background-size: contain;
+    background-position: center;
+    filter: grayscale(100%);
+}
+
+.carousel-item {
+    /*background-size: contain;
+    position: relative;
+    z-index: -1;
+    background-attachment: fixed;*/
     background-position: bottom;
     background-size: cover;
     height: 100vh;
     width: 100vw;
-    margin-bottom: 0;
+    margin-bottom: 0px;
     z-index: -1;
-    
+        
 }
 
-.top {
-    padding: 12px;
-    margin-top: 12%
-}
 
-#experienceMainView {
+
+/*----------------------------------------------------------- Experience ----------------------------------------------------*/
+.experiencemainview {
     background-attachment: fixed;
     background-image: url(../images/desert.jpg);
     background-position: bottom;
@@ -105,21 +143,33 @@ h1, h2 {
     width: 100vw;
     margin-bottom: 0;
 }
-#mainprofile {
-    background-position: right;
-    background-image: url(../images/michaeleaston.png);
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100vh;
-    margin-bottom: 0;
-}
-.displayimages {
-    display: inline-flex;
-}
+
+
 
 .Main-Timeline {
     display: block;
 }
 .timeline {
     display: inline-flex;
+}
+
+/*.col-md-7 {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+  text-decoration-style: none;
+    position: bottom;
+#TimelineBlock {
+    display: inline-block;
+}*/
+
+
+
+@media(min-width: 992px) {
+    .center-form {
+        padding-top: 30px;
+        min-height: 250px;
+        margin: 0 auto;
+        max-width: 40%;
+    }
 }

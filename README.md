@@ -9,6 +9,7 @@ Actual website can be found [here](https://www.backtothefitness.co.uk/).
 
 ## UX 
 My goal in the design was to make it minimalist as possible for information on personal trainer at best interest.
+i want client able to read the contents with ease and interest them to learn and improvised themself.
 I want client able to navigate and book a session with ease of use, at anytime, mobile based by using calendar 
 sychonised between Michael and clients based members on this website.
 
@@ -25,11 +26,13 @@ For this project, as strictly only in
 ## features
 I want able to add alert banner for adverts discounts, at the top of webpage.
 
-I want three webpage for scrolling down, forth for members page and booking area (calendar style booking avalable)
+I want three webpage for scrolling down, forth for members page and booking area (calendar style booking)
+colors as in avalable.
 
 I will add forms for client's details to become a member.
 so members able to book a session with Michael.
 
+------------------------------------------------------------------------------------------------------------------------
 1. webpage...
 
     index.html - home page
@@ -43,8 +46,9 @@ so members able to book a session with Michael.
 
     scroll down - third page
 
-    - experience history details certificated details etc
+    - experience history details mix with type of instructor (download certificated details, probably in service-page and add in icon tab)
 
+------------------------------------------------------------------------------------------------------------------------
 2. webpage...
 
     service.html - service page
@@ -59,6 +63,7 @@ so members able to book a session with Michael.
 
     - Testimonals
 
+------------------------------------------------------------------------------------------------------------------------
 3. webpage...
 
     location.html - where to find me.
@@ -74,6 +79,7 @@ so members able to book a session with Michael.
 
     - Contact - emails, and sign language.
 
+------------------------------------------------------------------------------------------------------------------------
 4. webpage...
 
     - sign-up & sign-in - forms fill in, forms sign-in.
@@ -87,10 +93,34 @@ so members able to book a session with Michael.
 
     - comfirmation area and time & emails nofication
 
+------------------------------------------------------------------------------------------------------------------------
 
 
 
-## future feature to be add
+
+
+#### infomation on the origin source.
+
+- Ashion webpage portfolio - http://www.chitrakootweb.com/template/ashton/home07-light-side-nav.html#portfolio
+    - Ashton Hokes main front face, this will be home page (index.html)
+    - My experience html stucture, to use it as in "card" (bootstrap) with further info button directing to new page.
+
+- Haley Schafer webpage portflio - https://code-institute-solutions.github.io/StudentExampleProjectGradeFive/
+    - i liked the jumbotron display, that the background images doesnt move, yet others moves.
+
+- Climbing Icon - https://www.flaticon.com
+    - difficult to find one that's free, but in SVG, so i add into HTML.
+    - tidy up the svg structure, and changes the color also "fill" to be white from none.
+
+- Carousel the sliding effect i have add javastrap links in order for it to work.
+
+#### links
+- www.tutorialrepublic.com
+- www.w3schools.com
+- www.getbootstrap.com
+- www.tympanus.net
+
+##### future feature to be add
 calendar to be sychonised and bookings comfirmation. probably in Javascripts.
 
 col automatic from  interested to add http://jsfiddle.net/tolginho/EBqZv/5/

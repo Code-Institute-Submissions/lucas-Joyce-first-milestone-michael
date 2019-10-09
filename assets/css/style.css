@@ -1,175 +1,847 @@
+/*=============== General ==============*/
+
+@import url('https://fonts.googleapis.com/css?family=Exo|Fira+Sans&display=swap:100,200,300,400,500,600,700,800,900|Fira+sans:100,200,300,400,500,600,700,800,900');
+
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #fff;
-}
-/*=========================================================== Navigaton Bar ===================================================*/
-.navdefault {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: rgb(71, 62, 62);
-    height: 50px;
-    color: #0997d3;
-    z-index: 3;
+    font-family:  'Fira Sans', 'Exo', sans-serif;
+    font-size: 17px;
+    color: whitesmoke;
 }
 
-.boxbtn {
-    width: 50px;
-    height: 50px;
-    background-color: orange;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    box-shadow: -30px 39px 65px -10px rgba(0,0,0,0.25);
-    border-color: #0997d3;
-    border-style: solid;
-    border-width: 0px 0px 0px 0px;
-    transition-duration: 0.4s;
-    transition-timing-function: ease-in-out;
-    align-items: flex-end;
-    z-index: 3;
+
+/*------------- BG-Colors --------------*/
+
+/*#nav-index {
+  background-color: yellowgreen;
+}
+#nav-about {
+  background-color: blueviolet;  min-width: 100vw;
+}*/
+#nav-ex {
+  background-image: linear-gradient(black, black), url(../images/experience/img-bg-climb.jpg);
+  background-blend-mode: saturation;
+  background-attachment: fixed;
+  background-size: cover;
+  padding:0;
+  margin: 0;
+  min-height:100vh;
+}
+#nav-test {
+  background-image: linear-gradient(black, black), url(../images/experience/img-climb3.JPG);
+  background-blend-mode: saturation;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+  padding:0;
+  margin: 0;
+  min-height:100vh;
+}
+#nav-service {
+  background-image: linear-gradient(black, black), url(../images/experience/img-snow3.jpg);
+  background-blend-mode: saturation;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding:0;
+  margin: 0;
+  min-height:100vh;
+}
+#nav-booking {
+  background-image: linear-gradient(black, black), url(../images/experience/img-snow3.jpg);
+  background-blend-mode: saturation;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding:0;
+  margin: 0;
+  min-height:100vh;
+}
+#nav-contact {
+  background-image: linear-gradient(black, black), url(../images/about/carousel/surf.jpg);
+  background-blend-mode: saturation;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding:0;
+  margin: 0;
+  min-height:100vh;
 }
 
-.boxbtn:hover {
-    width: 400px;
-    height: 100px;
-    border-radius: 0px 0px 0px 50px;
-    border-width: 0px 0px 0px 30px;
+
+
+/*============= Navigation ==========<i class="fas fa-sign-language"></i>==<i class="far fa-sign-language"></i>=*/
+
+
+/*--------------- Michael's button style ----------------*/
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #178bf7;
+  border: 2px solid coral;
+  color: whitesmoke;
+  padding: 8px 30px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius:10px;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: large;
 }
 
-.boxbtn i {
-    color: #fff;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
 
-.navinline {
-    display: flex;
-}
 
-ul {
-     list-style-type: none;
-}
 
-li {
-    padding: 0px 10px;
-    position: relative;
-    padding-top: 30px;
-}
 
-/*=========================================================== Jumbotron  ===================================================*/
-/*------------------------------------------------------------- Index ------------------------------------------------------*/
+
+
+
+
+
+
+/*============= Jumbotron  =============*/
+
+/*--------------- Michael's title style ----------------*/
 .jumbotron {
-    padding: 0;
+  padding: 20px;
+  margin: 0;
+  background-color: transparent;
+  
+}
+.section-title {
+    text-align: center;
+    font-variant: small-caps;
+    letter-spacing: 6px;
+    padding-top: 20px;
 }
 
-.homemainview {
+.block-divider {
+    border-top: 4px solid #178bf7;
+    max-width: 250px;
+    height: 5px;
+}
+
+.block-divider2 {
+  border-top: 4px solid coral;
+  max-width: 250px;
+  height: 5px;
+}
+
+
+/*--------------- Index ----------------*/
+#nav-index {
+    background-image: linear-gradient(black, black), url(../images/home/sunset.jpg);
+    background-blend-mode: saturation;
     background-attachment: fixed;
-    background-image: url(../images/butterfly.jpg);
-    background-position: bottom;
     background-size: cover;
     height: 100vh;
-    width: 100vw;
     margin-bottom: 0px;
-    z-index: -1;
-}
-.top {
-    padding: 12px;
-    margin-top: 50px;
+    z-index: -6;
+    padding: 0;
+    margin: 0;
 }
 
-/*----------------------------------------------------------- About (carousel)--------------------------------------------------------*/
+.navbar {
+  justify-content: flex-end;
+  background-color: transparent;
+  margin-right: 80px;
+}
 
-.front-about-image {
-    position: absolute;
-    display: inline-flex;
-    z-index: 2;
+.nav-top-title {
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 70px;
+  padding-right: 20px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  width: 100%;
+  text-align: center;
+}
+
+.backtofitness {
+  padding-right: 0px;
+  font-style: italic;
+  display: flex;
+  margin: 0;
+}
+.backtofitness span {
+  font-weight: bold; 
+}
+
+/* 
+  font sizes as follow
+   fa-2x = 2em
+   fa-3x = 3em
+   fa-4x = 4em
+   fa-5x = 5em
+              */
+
+.fa-angle-double-right {
+  font-size: 2em;
+}
+.fa-angle-double-left {
+  font-size: 5em;
+}
+.fa-running {
+  font-size: 4em;
+  align-self: center;}
+
+
+
+
+
+
+
+
+#bars-icon {
+  top: 50px;
+  float: right;
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  border-radius: 10px;
+  align-self: center;
+  background-color: coral;
+  border: 2px solid  #178bf7;
+  color: #178bf7;
+  
+}
+
+#bars-icon:hover {
+    background-color: #178bf7;
+    border: 2px solid coral;
+    color: coral;
+    transition: background-color .10s ease-in-out, color .10s ease-in-out;
     
 }
-.carousel-inner {
-    width: fit-content;
+
+
+.dropdown {
+  position: absolute;
+  z-index: 1;
 }
-.carousel {
-    margin-bottom: 0px;
+.dropdown-content {
+  display:none;
+  position: fixed;
+  list-style: none;
+  letter-spacing: 8px;
+  font-weight: bold;
+  font-size: large;
+  width: 350px;
+  top: 107px;
+  right: 43px;
+  margin: 0px;
+  padding: 0;
+  z-index: -1;
+  
 }
+ 
 
-.profile-image {
-    background-attachment: scroll;
-    background-image: url(../images/michaeleaston.png);
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 100vh;
-    width: 100vw;
-    margin-bottom: 0;
-    right: 110px;
-    filter: grayscale(0%);
-}
-.d-block {
-    height: 100vh;
-    width: 100vw;
-    background-size: contain;
-    background-position: center;
-    filter: grayscale(100%);
-}
-
-.carousel-item {
-    /*background-size: contain;
-    position: relative;
-    z-index: -1;
-    background-attachment: fixed;*/
-    background-position: bottom;
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
-    margin-bottom: 0px;
-    z-index: -1;
-        
-}
+  /* background-color: transparent;  
+  transition: transform .5s ease-in-out;box-shadow: -56px 39px 35px -10px rgba(0,0,0,0.25);
+  background-color#0997d3;#0982b6
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(0, 89, 255));*/
 
 
-
-/*----------------------------------------------------------- Experience ----------------------------------------------------*/
-.experiencemainview {
-    background-attachment: fixed;
-    background-image: url(../images/desert.jpg);
-    background-position: bottom;
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
-    margin-bottom: 0;
-}
-
-
-
-.Main-Timeline {
+  .dropdown:hover .dropdown-content {
     display: block;
+    transition: display .3s ease-in-out, color .3s ease-in-out;
+  }
+
+
+
+
+
+
+.dropdown-item {
+  font-family: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  text-align: right;
+  padding: 10px 5px;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(75, 75, 80));
 }
-.timeline {
-    display: inline-flex;
+.dropdown-item:hover {
+  background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(75, 75, 80));
+  background-color: transparent;
+}
+ /**/
+a {
+  color: coral;
 }
 
-/*.col-md-7 {
-    padding-right: 20px;
-    padding-left: 20px;
+a:hover { 
+  color: whitesmoke;
+  font-weight: bolder;
+  text-decoration-line: none;
+  background-color: transparent;
+  transition: font-weight .3s ease-in-out, color .3s ease-in-out;
 }
-  text-decoration-style: none;
-    position: bottom;
-#TimelineBlock {
-    display: inline-block;
-}*/
 
 
 
-@media(min-width: 992px) {
-    .center-form {
-        padding-top: 30px;
-        min-height: 250px;
-        margin: 0 auto;
-        max-width: 40%;
+
+
+#index-display {
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: auto;
+}
+#btn-index {
+  margin: 40px;
+}
+.icon-button {
+  align-content: space-between;
+}
+.btn-info {
+  border-radius: 10px;
+  color: coral;
+  font-style: bold;
+  border: 2px solid coral;
+}
+.name{
+  letter-spacing: 6px;
+  word-spacing: 10px;
+}
+/*-------------(Modal-Form) ------------*/
+
+
+
+
+
+
+
+/*--------------- about ----------------*/
+#nav-about{
+  padding: 0;
+  display: flex;
+}
+.frontabout {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    
+}
+.container-about{
+  color: white;
+  margin-bottom: 80px;
+  margin-top: 30px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 2px solid coral;
+  background-color: rgba(133, 131, 131, 0.322);
+
+}
+
+#profile-img {
+    background-image: url(../images/about/michaeleaston.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    height: 100vh;
+
+}
+
+/*--------------(carousel) --------------*/
+.jumbotron-carousel {
+  margin-bottom: 0px;
+}
+.jumbotron-carousel-inner {
+  position: absolute;
+  width: 100wh;
+}
+.jumbotron-carousel-item {
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  z-index: -1;
+}
+
+#carousel-img-1 {
+  background-image: url(../images/about/carousel/water.jpg);
+}
+#carousel-img-2 {
+  background-image: url(../images/about/carousel/surf.jpg);
+}
+#carousel-img-3 {
+  background-image: url(../images/about/carousel/flowers.jpg);
+  }
+#carousel-img-4 {
+  background-image: url(../images/about/carousel/desert.jpg);
+}
+
+/*------------- experience -------------*/
+
+.date {
+  padding: 20px;
+}
+
+.btn-ex {
+     position: absolute;
+     bottom: 20px;
+     align-self: center;
+     align-content: center;
+}
+.align-self-center i {
+  padding: 10px;
+  color: coral;
+}
+#Climbing-icon {
+  padding: 10px;
+  color: coral;
+}
+.card-a {
+    border: 2px solid coral;
+    background-color: rgba(189, 183, 183, 0.438);
+    height: 550px;
+}
+.card-item {
+  /*font-family:  'Fira Sans', sans-serif;*/
+  padding:15px;
+}
+.card-body {
+  padding:6px;
+}
+.card-title {
+  color: #178bf7;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+.modified-row {
+  padding-bottom: 30px;
+  padding-top: 30px;
+  margin-bottom: 0px;
+}
+/*-----------(Modal-Carousel) ----------*/
+
+
+
+/*------------- Testimonials ------------*/
+
+.round-images {
+  border-color: 4px coral;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.stars {
+  color:coral;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+
+
+.fa-quote-left {
+padding-right: 40px;
+color:coral;
+}
+
+.fa-quote-right {
+  padding-left: 40px;
+  align-self: flex-end;
+  float: right;
+  color:coral;
+}
+
+.flex-container i {
+ padding: 6px;
+ 
+}
+
+  .quoteblock-right {
+  justify-content: center;
+  }
+  .quoteblock-left {
+  justify-content: center;
+  }
+.flex-container {
+  display: block;
+  text-align: center;
+  text-align: -webkit-center;
+  -moz-text-align: center;
+  padding: 0px;
+
+}
+.media{
+   display: block;
+   flex-direction: column;
+}
+.media-body {
+  background-color: rgba(189, 183, 183, 0.438);
+  border-radius: 20px;
+  padding: 10px;
+}
+.quoteblock {
+padding: 25px;
+margin-bottom: 0px;
+justify-content: center;
+}
+
+.quote-name {
+  align-items:center;
+  font-weight: bold;
+  text-align: center;
+}
+
+#img-block-1 {
+  background-image: url(../images/testimonials/michaeleaston.png);
+  background-position-y: 0px;
+  background-size: 140%;
+}
+#img-block-2 {
+  background-image: url(../images/testimonials/tomreb.jpg);
+  background-position-y: -60px;
+  background-size: 120%;
+}
+#img-block-3 {
+  background-image: url(../images/testimonials/tara.JPG);
+  background-position-y: -50px;
+  background-position-x: -100px;
+  background-size: 200%;
+}
+#img-block-4 {
+  background-image: url(../images/testimonials/lucasjoyce.JPG);
+  background-position-y: 0px;
+  background-repeat: no-repeat;
+  background-position-x: -30px;
+  background-size: 170%;
+  transform: rotate(90deg);
+}
+
+/*------------- service ------------<i class="fas fa-sign-language"></i>==<i class="far fa-sign-language"></i>*/
+
+.service-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+ 
+  width: 300px;
+  height: 300px;
+  margin: 3% auto;
+  padding: 10px;
+}
+
+.card {
+  flex: auto;
+   border-radius: 15px;
+   padding: 15px;
+}
+
+/*------------- contact -------------*/
+
+/*=============== Footer ===max-width: fit-content;=align-items:  box-sizing: border-box; center;==align-self: flex-start;==  width: fit-content; .link-items img {
+  display: block;
+  
+  height: 150px;
+} height: 200px;=======*/
+
+/*#surfkinglogo,
+#hofnar {
+  background-color: #000;
+}.footer-link:hover {
+  height:100%;  height:40px;
+}width: fit-content;*/
+.footer-link {
+  position: static;
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.expaind:hover {
+  height: 250px;
+  transition: height .3s ease-in-out, color .3s ease-in-out;
+  
+}
+.expaind {
+  height:40px;
+  transition: height .3s ease-in-out, color .3s ease-in-out;
+  position: relative;
+  bottom: -305px;
+  left: 0;
+  right:0;
+  display: inline-table;
+  padding-top: 8px;
+  align-items: flex-start;
+  margin-bottom: 0px;
+  background-color: grey;
+  z-index: 1;
+}
+.block-set {
+  display: inline-flex;
+  padding: 0;
+}
+.link-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.link-items a {
+  padding-bottom: 20px;
+  padding-top: 0px;
+  height:35px;
+}
+img {
+  padding: 0px;
+  object-fit:cover;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+/*=============== Media  ===============*/
+
+/* === mobile phones === */
+@media screen and (min-width: 360px) { 
+
+/*------------- index ------------*/
+.fa-angle-double-left {
+  font-size: 2.5em;
+}
+.fa-angle-double-right {
+  font-size: 1em;
+}
+.fa-running {
+  display: none;
+  font-size: 2.1em;
+  align-self: center;}
+
+#backtothefitness {
+  font-size: 1.5em;
+}
+.navbar {
+  margin-right: 50px;
+}
+#bars-icon {
+  top: 10px;
+}
+.nav-top-title {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.dropdown-content {
+  top: 66px;
+  right: 14px;
+}
+
+/*------------- About ------------*/
+#profile-img {
+  display:none;
+}
+.jumbotron-carousel-inner {
+  display: none;
+}
+} 
+
+
+@media screen and (max-width: 320px) { 
+.fa-angle-double-left {
+  display: none;
+}
+.fa-running {
+  display: none;
+}
+.fa-angle-double-right {
+  font-size: 1em;
+}
+#bars-icon {
+  top: 10px;
+}
+.navbar {
+  margin-right: 50px;
+}
+#backtothefitness {
+  font-size: 1.5em;
+}
+.nav-top-title {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#profile-img {
+  display:none;
+}
+.jumbotron-carousel-inner {
+  display: none;
+}
+.dropdown-content {
+  top: 66px;
+  right: 14px;
+}
+}
+
+
+  /* === tablet === */
+@media screen and (min-width: 768px) {
+
+  .fa-angle-double-right {
+    font-size: 2em;
+  }
+  .fa-angle-double-left {
+    font-size: 5em;
+  }
+  .fa-running {
+    font-size: 4em;
+    align-self: center;
+  display:block;}
+  
+  #backtothefitness {
+  font-size: 3em;
+}
+.navbar {
+  margin-right: 80px;
+}
+#bars-icon {
+  top: 50px;
+}
+.dropdown-content {
+  top: 107px;
+  right: 43px;
+}
+  
+  
+/*------------- About ------------*/
+  #profile-img {
+    display: flex;
+    background-position: bottom;
+    background-size: contain;
+}
+.modified-container {
+  max-width: 780px;
+  padding-right: 0px;
+}
+.frontabout {
+  align-items: flex-start;
+}
+.jumbotron-carousel-inner {
+  display: flex;
+}
+
+}
+@media screen and (min-width: 992px) {
+.modified-container {
+    max-width: 960px;
+  }
+  .frontabout {
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+
+  .modal-dialog{
+  max-width: 980px;
+  }
+ 
+/*------------- About ------------*/
+  #profile-img {
+    background-position: top;
+    background-size: cover;
+}
+ .modified-container {
+    padding-right: 15px;
+  }
+
+  /*------------- Testimonials ------------*/
+  .fa-star-half-alt {
+  transform: rotate(-90deg);
+  }
+  .fa-star {
+  transform: rotate(-10deg);
+  }
+  .reversed {
+  display: flex;
+  flex-direction: row-reverse;
+  }
+  .stars {
+  flex-direction: column-reverse;
+  margin-bottom: 0px;
+  }
+  .nothorzright {
+  width:1px;
+  height:130px;
+  }
+  .nothorzleft {
+  width:1px;
+  height:130px;
+  }
+  .quoteblock-right {
+  justify-content: flex-end;
+  }
+  .quoteblock-left {
+  justify-content: flex-start;
+  }
+  .round-images {
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+  }
+  .flex-container {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  }
+  .nothorzright {
+  border-left: 3px solid coral;
+  border-top: 0;
+  padding: 10px;
+  margin: 0;
+}
+.nothorzleft {
+  border-right: 3px solid coral;
+  border-top: 0;
+  padding: 10px;
+  margin: 0;
+}
+.media-body {
+  min-height: 130px;
+}
+}
+/* === destop computers === */
+  @media screen and (min-width: 1280px) { 
+
+  .modal-dialog{
+  max-width: 1250px;
+  }
+
+}
+@media screen and (min-width: 1440px) { 
+.modal-dialog{
+  max-width: 1400px;
+}  
+
+
+}
+/*------------- Testimonials ------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* orientation
+  @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+    html {
+      transform: rotate(-90deg);
+      transform-origin: left top;
+      width: 100vh;
+      overflow-x: hidden;
+      position: absolute;
+      top: 100%;
+      left: 0;
     }
-}
+  }*/

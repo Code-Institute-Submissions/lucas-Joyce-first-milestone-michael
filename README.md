@@ -24,74 +24,74 @@ For this project, as strictly only in
 3. Bootstrap (with updated version.)
 
 ## features
+
 I want able to add alert banner for adverts discounts, at the top of webpage.
 
-I want three webpage for scrolling down, forth for members page and booking area (calendar style booking)
-colors as in avalable.
+I want a webpage for scrolling down, and a modal for members page and booking area.
 
 I will add forms for client's details to become a member.
-so members able to book a session with Michael.
+so members able to book a session with Michael, 
+and ease of use by planning through a sychonised calendar on Michael's organised calendar.
+
+I would like a calendar in different booking colors for Michael so he will know which area of sport.
+
+I would like to keep it minimized in mobile forms, such as carousals that shalt be retruct
+
 
 ------------------------------------------------------------------------------------------------------------------------
-1. webpage...
 
-    index.html - home page
+## index.html
 
-    - Front display - Michael Easton, Personal Trainer
-        - sign-up button area.
+Simple navigation bar - scroll pages
 
-    scroll down - second page
 
-    - About - about him.
+#### Home
+1. Front page
+    - logo.
+    - Front display.
+        - introduction, professonal statute. 
+        - additonal on the icon to facebook & instagram etc.
+    - sign-up button in modal forms.
+#### About
+2. second page
+    - profile of Michael.
+        - will not be display in mobile version.
+    - decription.
+    - Carousal background.
+        - to be display only on tablet and destops.
+        - single image on mobile version only.
+#### Experience
+3. Third page - (Why hire me?)
+    - card description with icon.
+    - button for more infomations.
+    - in modal, images to show of what he did.Personal Trainer such as went to tough mudder.
+    - history of his sports and hobbies.
+#### Testimonials
+4. Fourth page
+    - quotes and star ratings
+    - ajustable media
+#### Service
+5. fifth page - (what offer i do?)
+    - able to be interpret, comunicate support in sign language.
+    - provide equmpments
+    - travel to owner's home
+    - skill expertise.
+    - flexible. instructor.
+    - certificated, professonal details.
+#### Booking
+6. sixth page
+    - calendar
+    - with bullet option morning, afternoon, evening.
+#### Contact
+7. seventh page
+    - additonal contact for advise.
+    - where to find me.
+    - Location - of gym, snow, climbing.
+    - comfirmation and nofication.
+##### Footer
+    -  Michael's activity hobbies.
+    - links.
 
-    scroll down - third page
-
-    - experience history details mix with type of instructor (download certificated details, probably in service-page and add in icon tab)
-
-------------------------------------------------------------------------------------------------------------------------
-2. webpage...
-
-    service.html - service page
-
-    - Why hire me? - history of his sports and hobbies.
-
-    scroll down - second page
-
-    - what offer i do? - equmpments, location, skills expertise.
-
-    scroll down - third page
-
-    - Testimonals
-
-------------------------------------------------------------------------------------------------------------------------
-3. webpage...
-
-    location.html - where to find me.
-
-    - Location - with option of gym, snow, climbing.
-
-    scroll down - second page
-
-    - Blog - Michael's activity such as went to tough mudder.
-        - additonal on the icon to fb & instagram
-
-    scroll down - third page
-
-    - Contact - emails, and sign language.
-
-------------------------------------------------------------------------------------------------------------------------
-4. webpage...
-
-    - sign-up & sign-in - forms fill in, forms sign-in.
-
-    scroll down - second page
-
-    - Calendar bookings. - with bullet option morning, afternoon, evening.
-        - when signed in this will appear.
-
-    scroll down - third page
-
-    - comfirmation area and time & emails nofication
 
 ------------------------------------------------------------------------------------------------------------------------
 

@@ -4,254 +4,917 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="images/home/ob.jpg">
     <link 
-        rel="stylesheet" 
-        href="https://use.fontawesome.com/releases/v5.10.1/css/all.css" 
-        integrity="sha384-wxqG4glGB3nlqX0bi23nmgwCSjWIW13BdLUEYC4VIMehfbcro/ATkyDsF/AbIOVe" 
-        crossorigin="anonymous"
-        type="text/css"/>
+    rel="stylesheet" 
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link 
-        rel="stylesheet" 
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        type="text/css"/>
-    <link rel="stylesheet" href="css\style.css">
+    rel="stylesheet" 
+    href="https://use.fontawesome.com/releases/v5.10.1/css/all.css" 
+    integrity="sha384-wxqG4glGB3nlqX0bi23nmgwCSjWIW13BdLUEYC4VIMehfbcro/ATkyDsF/AbIOVe" 
+    crossorigin="anonymous"
+    type="text/css"/>
+
+    <link rel="stylesheet" href="./css/style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <title>BTF</title>
+
+
+
+    <title>Back to the Fitness</title>
 </head>
-
-
 <body>
-<!-- Jumbotron home -->
-    <header class="jumbotron homemainview">
-        <nav>
-            <div class="navdefault">
-                <div class="navbtntitle"><span><a href=""></a></span></div>
-                <p class="NameTitle">Michael</p>
-                <div class="boxbtn"><i class="fas fa-bars fa-2x"></i>
-                    <div class="navinline">
-                        <div class="item"><a href="index.html">Home</a></div>
-                        <div class="item"><a href="service.html">Service</a></div>
-                        <div class="item"><a href="contact.html">Contact</a></div>
-                        <div class="item"><a href="account.html">Account</a></div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-            <div class="container top">
-                <div class="row">
-                    <div>
-                    <p class="title">Hello, I am</p>
-                    <h1 class="name">Michael Easton</h1>
-                    <p class="title">Personal Trainer</p>
-                    </div>
-                </div>
-            </div>
+
+<!-- Jumbotron  index -->
+<header class="jumbotron" id="nav-index"  >
         
-    </header>
-<!-- Jumbotron About -->
-    <section id="carousel" class="jumbotron carousel slide carousel-fade aboutmainview" data-ride="carousel">
-                        <div class="carousel-inner">
+            <nav class="navbar">
 
-                                <div class="front-about-image">
-                                        <div class="container-fluid col-md-7"> 
-                                                    <div class="row">
-                                                        <h2 class="title">About</h2>
-                                                        <hr>
-                                                    </div>
-                                                    <div class="row">
-                                                        <p class="description"> 
-                                                            For over 8 years I have been involved closely in the fitness industry and am qualified to instruct in fitness training as a Personal Trainer.
-                                                            I design enjoyable individual fitness training programmes for all ages and abilities. I can also advise on nutrition and weight management. As your trainer, I aim to meet your requirements whether in your home, at your local park or workplace.
-                                                            I am hearing impaired and have a cochlear implant. I hear well and clients find communication fine.</p>
-                                                    </div>
-                                        </div>
-                                    <div class= "col-md-5 profile-image"></div>
-                                </div>
-              
-                    <div class="carousel-item active">
-                        <img src="./images/flowers.jpg" class="d-block" alt="..."></div>
-                    <div class="carousel-item">
-                      <img src="./images/water.jpg" class="d-block" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="./images/tiger.jpg" class="d-block" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/surf.jpg" class="d-block" alt="...">
-                    </div>
-    </div>
-    
-    </section>
-<!-- Jumbotron  experience-->
-    <section class="jumbotron experiencemainview">
-            <div class="container-fluid col-md-12">
-                
-                        <div class="row">
-                            <h2 class="title">Experience</h2>
-                            <hr>
-                         </div>
-                         <div class="row" id="TimelineBlock">
-                         <div> 
+                <div class="nav-top-title">
+                    <i class="fas fa-angle-double-left"></i>
 
-                    <div class="Main-Timeline">
-<!-- block-1 ski/snowboard Instructor -->
-                                <div class="timeline">
-                                    <div class="date-content">
-                                        <div class="date-outter">
-                                            <span class="date">
-                                            <span class="month">August</span>
-                                            <span class="year">2015</span>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="center-icon"><i class="fas fa-snowboarding fa-5x"></i></div>
-                                    <div class="info-content">
-                                        <h5 class="title">Snowboard/Ski Instructor</h5>
-                                        <p class="description"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                                                Nulla officiis vero at fugit facilis natus, consectetur, 
-                                                quo ipsum quae non culpa placeat soluta ab itaque quibusdam veniam. 
-                                                Sed, mollitia similique!</p>
-                                    </div>
-                                </div>
-                            
-<!-- block-2 Life Guard -->
-                                    <div class="timeline">
-                                        <div class="date-content">
-                                            <div class="date-outter">
-                                                <span class="date">
-                                                <span class="month">August</span>
-                                                <span class="year">2015</span>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="center-icon"><i class="fas fa-swimmer fa-5x"></i></div>
-                                        <div class="info-content">
-                                            <h5 class="title">Life Guard</h5>
-                                            <p class="description"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                                                    Nulla officiis vero at fugit facilis natus, consectetur, 
-                                                    quo ipsum quae non culpa placeat soluta ab itaque quibusdam veniam. 
-                                                    Sed, mollitia similique!</p>
-                                        </div>
-                                    </div>
-<!-- block-3 Personal Instructor -->
-                                    <div class="timeline">
-                                        <div class="date-content">
-                                            <div class="date-outter">
-                                                <span class="date">
-                                                <span class="month">August</span>
-                                                <span class="year">2015</span>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="align-self-center mr-3"><i class="fas fa-dumbbell fa-5x"></i></div>
-                                        <div class="card-body">
-                                            <h3 class="card-title mt-0">Personal Instructor</h3>
-                                            <p class="card-text mt-0"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                                                    Nulla officiis vero at fugit facilis natus, consectetur, 
-                                                    quo ipsum quae non culpa placeat soluta ab itaque quibusdam veniam. 
-                                                    Sed, mollitia similique!</p>
-                                            <a href="#" class="btn btn-info">more info</a>
-                                        </div>
-                                    </div>
-                            
-<!-- block-4 climbing Instructor -->
-                            
-                                    <div class="timeline">
-                                        <div class="date-content">
-                                            <div class="date-outter">
-                                                <span class="date">
-                                                <span class="month">August</span>
-                                                <span class="year">2015</span>
-                                                </span>
-                                            </div>
-                                        </div>
-
-                                        <div class="center-icon">
-                                                <svg 
-                                                enable-background="new 0 0 50 50" 
-                                                height="100px" id="Layer_1" 
-                                                version="1.1"
-                                                viewBox="0 0 50 50" 
-                                                width="100px" 
-                                                xml:space="preserve" 
-                                                xmlns="http://www.w3.org/2000/svg" 
-                                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <rect 
-                                                    fill="none" 
-                                                    height="100" 
-                                                    width="100"/>
-                                                <path 
-                                                    d="  M27,5.5c0,2.487-2.015,4.5-4.497,4.5C20.015,10,18,7.987,18,5.5C18,3.014,20.015,1,22.503,1C24.985,1,27,3.014,27,5.5z" 
-                                                    fill="#ffffff" 
-                                                    stroke="#ffffff" 
-                                                    stroke-linecap="round" 
-                                                    stroke-linejoin="round" 
-                                                    stroke-miterlimit="10" 
-                                                    stroke-width="3"/>
-                                                <path 
-                                                    d="  M39.707,36.83c0,0-0.859-11.768-1.011-12.829s-1.191-1.804-2.172-1.667c-1.122,
-                                                    0.158-2.424,0.808-6.031,2.853l0.937-9.838  c0,0,5.812-11.164,6.047-11.794c0.356-0.97,
-                                                    0.57-1.855-0.491-2.387
-                                                    c-1.227-0.613-2.142,1.053-2.142,1.053L28,13  c0,0-4.713,0.476-6.355,0.536
-                                                    c-0.864,0.031-1.536,0.322-2.608,0.879c-0.951,0.495-4.304,2.36-4.304,
-                                                    2.36s-4.411-5.039-5.053-5.882  c-0.804-1.055-1.722-0.933-2.356-0.5S7.1,12.209,
-                                                    7.645,13.179c0.593,1.055,3.718,5.445,4.785,6.714  c1.229,1.462,1.827,1.232,2.75,
-                                                    0.857s4.571-1.679,4.571-1.679l1.157,9.839c-0.061,0.145-5.647,13.328-6.859,
-                                                    16.658  c-0.404,1.111-0.202,2.525,0.924,3.061c1.684,0.799,3.065-0.383,
-                                                    3.672-1.646c0.841-1.752,7.48-13.232,7.48-13.232  c3,0.375,4.328-0.984,5.167-1.502c0.839-0.519,
-                                                    3.566-2.842,3.566-2.842l0.808,7.677c0,0,0.405,2.879,2.273,2.525  S39.707,36.83,39.707,36.83z" 
-                                                    fill="#ffffff" 
-                                                    stroke="#ffffff" 
-                                                    stroke-linecap="round" 
-                                                    stroke-linejoin="round" 
-                                                    stroke-miterlimit="10" 
-                                                    stroke-width="3"/>
-                                                <path 
-                                                    d="  M21.019,28.244C33.394,28.244,45,11.883,45,1" 
-                                                    fill="none" 
-                                                    stroke="#ffffff" 
-                                                    stroke-linecap="round" 
-                                                    stroke-linejoin="round" 
-                                                    stroke-miterlimit="10" 
-                                                    stroke-width="3"/>
-                                                <line 
-                                                    fill="none" 
-                                                    stroke="#ffffff" 
-                                                    stroke-linecap="round" 
-                                                    stroke-linejoin="round" 
-                                                    stroke-miterlimit="10" 
-                                                    stroke-width="3" 
-                                                    x1="29" 
-                                                    x2="29.068" 
-                                                    y1="48" 
-                                                    y2="34"/>
-                                                </svg>
-                                        </div>
-
-                                        <div class="info-content">
-                                            <h5 class="title">Climbing Instructor</h5>
-                                            <p class="description"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                                                                    Nulla officiis vero at fugit facilis natus, consectetur, 
-                                                                    quo ipsum quae non culpa placeat soluta ab itaque quibusdam veniam. 
-                                                                    Sed, mollitia similique!</p>
-                                        </div>
-                                    </div>
+                    <div>
+                    <h1 id="backtothefitness" class="backtofitness">
+                    <span>Back</span> To The Fitness</h1>
+                    
+                    
+                    
+                    <i class="fas fa-angle-double-right"></i>
+                    <i class="fas fa-angle-double-right"></i>
+                    <i class="fas fa-angle-double-right"></i>
+                    <i class="fas fa-angle-double-right"></i>
+                    <i class="fas fa-angle-double-right"></i>
+                    <i class="fas fa-angle-double-right"></i>
+                    <i class="fas fa-angle-double-right"></i>
+                    <i class="fas fa-angle-double-right"></i>
+                    <i class="fas fa-angle-double-right"></i>
+                    <i class="fas fa-angle-double-right"></i>
+                    <i class="fas fa-angle-double-right"></i>
+                    <i class="fas fa-angle-double-right"></i>
                     </div>
 
-                                
+
+                    <i class="fas fa-running"></i>
+                </div> 
+            
+                <div class="dropdown">
+                        <button id="bars-icon">
+                            <i  id="bars" 
+                                class="fas fa-bars fa-2x"></i>
+                        </button>
+                    <ul class="dropdown-content">
+                        <li class="dropdown-item"><a href="#nav-index" class="dropdown-link">Home</a></li>
+                        <li class="dropdown-item"><a href="#nav-about" class="dropdown-link">About</a></li>
+                        <li class="dropdown-item"><a href="#nav-ex" class="dropdown-link">Experience</a></li>
+                        <li class="dropdown-item"><a href="#nav-test" class="dropdown-link">testimonials</a></li>
+                        <li class="dropdown-item"><a href="#nav-service" class="dropdown-link">Service</a></li>
+                        <li class="dropdown-item"><a href="#nav-booking" class="dropdown-link">Booking</a></li>
+                        <li class="dropdown-item"><a href="#nav-contact" class="dropdown-link">contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        <div class="container">
+                <div class="row">
+                    <div id="index-display">
+                    <h4 class="title">Hello, I am</h4>
+                    <h1 class="name">Michael Easton</h1>
+                    <hr class="block-divider">
+                    <h3 class="title">Personal Trainer</h3>
+                    <hr class="block-divider">
+                    <div class="flex-container icon-button">
+                        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="#"><i class="fab fa-airbnb fa-2x"></i></a>
+                    </div>
+                    <input 
+                        type="button"
+                        class="btn btn-warning"
+                        value="Sign up"
+                        id="btn-index"
+                        data-toggle="modal" 
+                        data-target="#sign-up-modal">
+                    </div>
+                </div>
+<!-- Modal Form -->
+<form>
+                <div class="modal fade" id="sign-up-modal" >
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+        
+                            <!-- Modal Header             -->
+                            <div class="modal-header">
+                                <label class="modal-title">Sign Up Form</label>
+                                <hr class="modal-divider">
+                            <button
+                                id="exit-button"
+                                type="button" 
+                                class="btn btn-warning fas fa-sign-out-alt fa-1x" 
+                                data-dismiss="modal">
+                            </button>
                             </div>
-           </div>
+                            
+                            <!-- Modal body -->
+                            <div class="modal-body">
+
+                                    <div class="form-group">
+                                            <label 
+                                                for="exampleInputEmail1">
+                                                Email address
+                                            </label>
+                                            <input 
+                                                class="form-control"
+                                                id="exampleInputEmail1" 
+                                                type="email" 
+                                                placeholder="Enter email"  
+                                                aria-describedby="emailHelp"
+                                                required>
+                                            <small 
+                                                class="form-text text-muted" 
+                                                id="emailHelp">
+                                                We'll never share your email with anyone else.
+                                            </small>
+                                    </div>
+
+                                    <div class="form-group">
+                                            <label 
+                                                for="password">
+                                                Password
+                                            </label>
+                                            <input 
+                                                class="form-control" 
+                                                id="password" 
+                                                type="password"
+                                                placeholder="Password">
+                                    </div>
+
+                                    <div class="form-group">
+                                           <label 
+                                                for="repeatpassword">
+                                                repeat Password
+                                            </label>
+                                            <input 
+                                                class="form-control" 
+                                                id="repeatpassword" 
+                                                type="password"
+                                                placeholder="repeat Password">
+                                    </div>
+                                    
+                                        
+                                    
+                            </div>
+                            
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                    <input
+                                        class="btn btn-warning"
+                                        type="submit"/>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+</form>
             </div>
 
-    </section>
+</header>
 
-    <footer>
+<!-- Jumbotron  about -->
+<section class="jumbotron jumbotron-fluid carousel slide carousel-fade jumbotron-carousel" 
+         id="nav-about" data-ride="carousel">
 
-    </footer>
+
+
+    <div class="carousel-inner jumbotron-carousel-inner">
+        <div class="carousel-item jumbotron-carousel-item active" id="carousel-img-1"></div>
+        <div class="carousel-item jumbotron-carousel-item" id="carousel-img-2"></div>
+        <div class="carousel-item jumbotron-carousel-item" id="carousel-img-3"></div>
+        <div class="carousel-item jumbotron-carousel-item" id="carousel-img-4"></div>
+    </div>
+
+<!-- "  -->
+
+                <div class="container modified-container">
+                <div class="frontabout">
+                    <div class="col-md-4">
+                        <div class="container-about">
+                        <h2 class="section-title">About</h2>
+                        <hr class="block-divider">
+                        <p class="description"> 
+                                For over 8 years I have been involved closely in the fitness industry and am qualified to instruct in fitness training as a Personal Trainer.
+                                I design enjoyable individual fitness training programmes for all ages and abilities. I can also advise on nutrition and weight management. As your trainer, I aim to meet your requirements whether in your home, at your local park or workplace.
+                                I am hearing impaired and have a cochlear implant. I hear well and clients find communication fine.</p>
+                        </div>
+                    </div>
+                   
+                    <div id="profile-img" 
+                         class= "col-md-8">
+                    </div>
+                </div>
+                </div>
+                
+
+                        
+
+</section>
+
+<!-- Jumbotron  experience -->
+<section class="jumbotron jumbotron-fluid" id="nav-ex">
+
+                                <div class="container">
+                                <h2 class="section-title">Experience</h2>
+                                <hr class="block-divider">
+                                </div>
+
+                                <div class="container col-12">
+                                <div class="row modified-row">
+
+<!-- block-1 ski/snowboard Instructor --><div class="card-item col-lg-3 col-md-6">
+                                            <div class="card card-a">
+                                                <div class="align-self-center date-content">
+                                                    <div class="date-outter">
+                                                        <span class="date">
+                                                        <span class="month">August</span>
+                                                        <span class="year">2015</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="align-self-center"><i class="fas fa-snowboarding fa-3x"></i>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Snowboard/Ski Instructor</h5>
+                                                    <p class="card-text"> 
+                                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                                            Nulla officiis vero at fugit facilis natus, consectetur, 
+                                                            quo ipsum quae non culpa placeat soluta ab itaque quibusdam veniam. 
+                                                            Sed, mollitia similique!</p>
+                                                            <input
+                                                            class="btn btn-warning btn-ex"
+                                                            type="button" 
+                                                            value="More Info"
+                                                            data-toggle="modal" 
+                                                            data-target="#Ski-modal">
+                                                            
+                                                </div>
+                                            </div>
+<!-- end of block-1                 --> </div>
+
+<!-- block-2 Personal Trainer    --> <div class="card-item col-lg-3 col-md-6">
+                                            <div class="card card-a">
+                                                <div class="align-self-center date-content">
+                                                    <div class="date-outter">
+                                                        <span class="date">
+                                                        <span class="month">September</span>
+                                                        <span class="year">2014</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="align-self-center "><i class="fas fa-dumbbell fa-3x"></i>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title mt-0">Personal Trainer</h5>
+                                                    <p class="card-text mt-0"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                                            Nulla officiis vero at fugit facilis natus, consectetur, 
+                                                            quo ipsum quae non culpa placeat soluta ab itaque quibusdam veniam. 
+                                                            Sed, mollitia similique!</p>
+
+                                                            <input 
+                                                            class="btn btn-warning btn-ex"
+                                                            type="button" 
+                                                            value="More Info" 
+                                                            data-toggle="modal" 
+                                                            data-target="#PT-modal"/>
+                                                            
+                                                </div>
+                                            </div>
+<!-- end of block-2                 --> </div>
+                            
+<!-- block-3 climbing Instructor    --> <div class="card-item col-lg-3 col-md-6">
+                                            <div class="card card-a">
+                                                <div class="align-self-center date-content">
+                                                    <div class="date-outter">
+                                                        <span class="date">
+                                                        <span class="month">Febuary</span>
+                                                        <span class="year">2017</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="align-self-center">
+                                                        <svg 
+                                                        enable-background="new 0 0 50 50" 
+                                                        height="70px" id="Climbing-icon" 
+                                                        version="1.1"
+                                                        viewbox="0 0 50 50" 
+                                                        width="70px" 
+                                                        xml:space="preserve" 
+                                                        xmlns="http://www.w3.org/2000/svg" 
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <rect 
+                                                            fill="none" 
+                                                            height="70" 
+                                                            width="70"/>
+                                                        <path 
+                                                            d="  M27,5.5c0,2.487-2.015,4.5-4.497,4.5C20.015,10,18,7.987,18,5.5C18,3.014,20.015,1,22.503,1C24.985,1,27,3.014,27,5.5z" 
+                                                            fill="#ff7f50" 
+                                                            stroke="#ff7f50" 
+                                                            stroke-linecap="round" 
+                                                            stroke-linejoin="round" 
+                                                            stroke-miterlimit="10" 
+                                                            stroke-width="2"/>
+                                                        <path 
+                                                            d="  M39.707,36.83c0,0-0.859-11.768-1.011-12.829s-1.191-1.804-2.172-1.667c-1.122,
+                                                            0.158-2.424,0.808-6.031,2.853l0.937-9.838  c0,0,5.812-11.164,6.047-11.794c0.356-0.97,
+                                                            0.57-1.855-0.491-2.387
+                                                            c-1.227-0.613-2.142,1.053-2.142,1.053L28,13  c0,0-4.713,0.476-6.355,0.536
+                                                            c-0.864,0.031-1.536,0.322-2.608,0.879c-0.951,0.495-4.304,2.36-4.304,
+                                                            2.36s-4.411-5.039-5.053-5.882  c-0.804-1.055-1.722-0.933-2.356-0.5S7.1,12.209,
+                                                            7.645,13.179c0.593,1.055,3.718,5.445,4.785,6.714  c1.229,1.462,1.827,1.232,2.75,
+                                                            0.857s4.571-1.679,4.571-1.679l1.157,9.839c-0.061,0.145-5.647,13.328-6.859,
+                                                            16.658  c-0.404,1.111-0.202,2.525,0.924,3.061c1.684,0.799,3.065-0.383,
+                                                            3.672-1.646c0.841-1.752,7.48-13.232,7.48-13.232  c3,0.375,4.328-0.984,5.167-1.502c0.839-0.519,
+                                                            3.566-2.842,3.566-2.842l0.808,7.677c0,0,0.405,2.879,2.273,2.525  S39.707,36.83,39.707,36.83z" 
+                                                            fill="#ff7f50" 
+                                                            stroke="#ff7f50" 
+                                                            stroke-linecap="round" 
+                                                            stroke-linejoin="round" 
+                                                            stroke-miterlimit="10" 
+                                                            stroke-width="2"/>
+                                                        <path 
+                                                            d="  M21.019,28.244C33.394,28.244,45,11.883,45,1" 
+                                                            fill="none" 
+                                                            stroke="#ff7f50" 
+                                                            stroke-linecap="round" 
+                                                            stroke-linejoin="round" 
+                                                            stroke-miterlimit="10" 
+                                                            stroke-width="2"/>
+                                                        <line 
+                                                            fill="none" 
+                                                            stroke="#ff7f50" 
+                                                            stroke-linecap="round" 
+                                                            stroke-linejoin="round" 
+                                                            stroke-miterlimit="10" 
+                                                            stroke-width="2" 
+                                                            x1="29" 
+                                                            x2="29.068" 
+                                                            y1="48" 
+                                                            y2="34"/>
+                                                        </svg>
+                                                </div>
+
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Climbing Instructor</h5>
+                                                    <p class="card-text"> 
+                                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                                        Nulla officiis vero at fugit facilis natus, consectetur, 
+                                                        quo ipsum quae non culpa placeat soluta ab itaque quibusdam veniam. 
+                                                        Sed, mollitia similique!</p>
+                                                        <input
+                                                        class="btn btn-warning btn-ex"
+                                                        type="button" 
+                                                        value="More Info"
+                                                        data-toggle="modal" 
+                                                        data-target="#CI-modal">
+                                                    
+                                                </div>
+                                            </div>
+<!-- end of block-3                 --> </div>
+
+<!-- block-4 Life Guard             --> <div class="card-item col-lg-3 col-md-6">
+                                            <div class="card card-a ">
+                                                <div class="align-self-center date-content">
+                                                    <div class="date-outter">
+                                                        <span class="date">
+                                                        <span class="month">July</span>
+                                                        <span class="year">2016</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="align-self-center"><i class="fas fa-swimmer fa-3x"></i>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Life Guard</h5>
+                                                    <p class="card-text"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                                            Nulla officiis vero at fugit facilis natus, consectetur, 
+                                                            quo ipsum quae non culpa placeat soluta ab itaque quibusdam veniam. 
+                                                            Sed, mollitia similique!</p>
+                                                <input
+                                                    class="btn btn-warning btn-ex"
+                                                    type="button" 
+                                                    value="More Info"
+                                                    data-toggle="modal" 
+                                                    data-target="#life-modal">
+                                                    
+
+
+                                                </div>
+                                                </div>
+<!-- end of block-4                 --> </div>
+                                </div>
+                                </div>
+<!-- Modal details                  -->
+
+<!-- Modal ski/snowboard details     -->
+                                        <div class="modal fade" 
+                                                 id="Ski-modal">
+                                                <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+                                                
+                                                <div id="ski-carousel" class="carousel" data-ride="carousel">
+                                                <ul class="carousel-indicators">
+                                                <li data-target="#ski-carousel" data-slide-to="0" class="active"></li>
+                                                <li data-target="#ski-carousel" data-slide-to="1"></li>
+                                                <li data-target="#ski-carousel" data-slide-to="2"></li>
+                                                </ul>
+                                                                        <div class="carousel-inner modalcarousel">
+                                                                        <div class="carousel-item active">
+                                                                            <img src="assets/images/city.jpg" alt="Los Angeles" width="1100" height="900">
+                                                                            <div class="carousel-caption">
+                                                                            <h3>Los Angeles</h3>
+                                                                            <p>We had such a great time in LA!</p>
+                                                                            </div>   
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="assets/images/surf.jpg" alt="Chicago" width="1100" height="900">
+                                                                            <div class="carousel-caption">
+                                                                            <h3>Chicago</h3>
+                                                                            <p>Thank you, Chicago!</p>
+                                                                            </div>   
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="assets/images/tiger.jpg" alt="New York" width="1100" height="900">
+                                                                            <div class="carousel-caption">
+                                                                            <h3>New York</h3>
+                                                                            <p>We love the Big Apple!</p>
+                                                                            </div>   
+                                                                        </div>
+                                                                        </div>
+                                                                        <a class="carousel-control-prev" href="#ski-carousel" data-slide="prev">
+                                                                        <span class="carousel-control-prev-icon"></span>
+                                                                        </a>
+                                                                        <a class="carousel-control-next" href="#ski-carousel" data-slide="next">
+                                                                        <span class="carousel-control-next-icon"></span>
+                                                                        </a>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                        </div>
+                                        
+
+<!-- Modal Personal Trainer details  -->
+                                        <div class="modal fade" 
+                                                 id="PT-modal">
+                                                <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+                                                
+                                                <div id="Caro-PT" class="carousel" data-ride="carousel">
+                                                <ul class="carousel-indicators">
+                                                <li data-target="#Caro-PT" data-slide-to="0" class="active"></li>
+                                                <li data-target="#Caro-PT" data-slide-to="1"></li>
+                                                <li data-target="#Caro-PT" data-slide-to="2"></li>
+                                                </ul>
+                                                                        <div class="carousel-inner">
+                                                                        <div class="carousel-item active">
+                                                                            <img src="assets/images/city.jpg" alt="Los Angeles" width="1100" height="900">
+                                                                            <div class="carousel-caption">
+                                                                            <h3>Los Angeles</h3>
+                                                                            <p>We had such a great time in LA!</p>
+                                                                            </div>   
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="assets/images/surf.jpg" alt="Chicago" width="1100" height="900">
+                                                                            <div class="carousel-caption">
+                                                                            <h3>Chicago</h3>
+                                                                            <p>Thank you, Chicago!</p>
+                                                                            </div>   
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="assets/images/tiger.jpg" alt="New York" width="1100" height="900">
+                                                                            <div class="carousel-caption">
+                                                                            <h3>New York</h3>
+                                                                            <p>We love the Big Apple!</p>
+                                                                            </div>   
+                                                                        </div>
+                                                                        </div>
+                                                                        <a class="carousel-control-prev" href="#Caro-PT" data-slide="prev">
+                                                                        <span class="carousel-control-prev-icon"></span>
+                                                                        </a>
+                                                                        <a class="carousel-control-next" href="#Caro-PT" data-slide="next">
+                                                                        <span class="carousel-control-next-icon"></span>
+                                                                        </a>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                        </div>
+                                        
+
+<!-- Modal Climbing Instructor details-->
+                                        <div class="modal fade" 
+                                                     id="CI-modal">
+
+                                                <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+                                            
+                                                <div id="Caro-CI" 
+                                                    class="carousel" 
+                                                    data-ride="carousel">
+
+                                                <ul class="carousel-indicators">
+                                                <li data-target="#Caro-CI" data-slide-to="0" class="active"></li>
+                                                <li data-target="#Caro-CI" data-slide-to="1"></li>
+                                                <li data-target="#Caro-CI" data-slide-to="2"></li>
+                                                <li data-target="#Caro-CI" data-slide-to="3"></li>
+                                                </ul>
+                                                                    <div class="carousel-inner">
+                                                                    <div class="carousel-item active">
+                                                                        <img src="assets/images/city.jpg" alt="Los Angeles" width="1100" height="900">
+                                                                        <div class="carousel-caption">
+                                                                        <h3>Los Angeles</h3>
+                                                                        <p>We had such a great time in LA!</p>
+                                                                        </div>   
+                                                                    </div>
+                                                                    <div class="carousel-item">
+                                                                        <img src="assets/images/surf.jpg" alt="Chicago" width="1100" height="900">
+                                                                        <div class="carousel-caption">
+                                                                        <h3>Chicago</h3>
+                                                                        <p>Thank you, Chicago!</p>
+                                                                        </div>   
+                                                                    </div>
+                                                                    <div class="carousel-item">
+                                                                        <img src="assets/images/tiger.jpg" alt="New York" width="1100" height="900">
+                                                                        <div class="carousel-caption">
+                                                                        <h3>New York</h3>
+                                                                        <p>We love the Big Apple!</p>
+                                                                        </div>   
+                                                                    </div>
+                                                                    </div>
+                                                                    <a class="carousel-control-prev" href="#Caro-CI" data-slide="prev">
+                                                                    <span class="carousel-control-prev-icon"></span>
+                                                                    </a>
+                                                                    <a class="carousel-control-next" href="#Caro-CI" data-slide="next">
+                                                                    <span class="carousel-control-next-icon"></span>
+                                                                    </a>
+                                                                    </div>
+
+                                                            </div>
+                                                        </div>
+                                        </div>
+                                        
+
+<!-- Modal Life Guard details        -->
+                                        <div class="modal fade" 
+                                                id="life-modal">
+                                               <div class="modal-dialog modal-dialog-centered">
+                                               <div class="modal-content">
+                                               
+                                               <div id="Caro-LG" class="carousel" data-ride="carousel">
+                                               <ul class="carousel-indicators">
+                                               <li data-target="#Caro-LG" data-slide-to="0" class="active"></li>
+                                               <li data-target="#Caro-LG" data-slide-to="1"></li>
+                                               <li data-target="#Caro-LG" data-slide-to="2"></li>
+                                               </ul>
+                                                                       <div class="carousel-inner">
+                                                                       <div class="carousel-item active">
+                                                                           <img src="assets/images/city.jpg" alt="Los Angeles" width="1100" height="900">
+                                                                           <div class="carousel-caption">
+                                                                           <h3>Los Angeles</h3>
+                                                                           <p>We had such a great time in LA!</p>
+                                                                           </div>   
+                                                                       </div>
+                                                                       <div class="carousel-item">
+                                                                           <img src="assets/images/surf.jpg" alt="Chicago" width="1100" height="900">
+                                                                           <div class="carousel-caption">
+                                                                           <h3>Chicago</h3>
+                                                                           <p>Thank you, Chicago!</p>
+                                                                           </div>   
+                                                                       </div>
+                                                                       <div class="carousel-item">
+                                                                           <img src="assets/images/tiger.jpg" alt="New York" width="1100" height="900">
+                                                                           <div class="carousel-caption">
+                                                                           <h3>New York</h3>
+                                                                           <p>We love the Big Apple!</p>
+                                                                           </div>   
+                                                                       </div>
+                                                                       </div>
+                                                                       <a class="carousel-control-prev" href="#Caro-LG" data-slide="prev">
+                                                                       <span class="carousel-control-prev-icon"></span>
+                                                                       </a>
+                                                                       <a class="carousel-control-next" href="#Caro-LG" data-slide="next">
+                                                                       <span class="carousel-control-next-icon"></span>
+                                                                       </a>
+                                                                   </div>
+
+                                                               </div>
+                                                           </div>
+                                        </div>
+                                       
+
+
+
+</section>
+
+<!-- Jumbotron  testimonal -->
+<section class="jumbotron jumbotron-fluid" id="nav-test">
+
+                <div class="container">
+                    <h2 class="section-title">Testimonials</h2>
+                    <hr class="block-divider">
+                </div>
+
+<!--Q block 1--><div class="row quoteblock quoteblock-left">
+                    <div class="col-11">
+                        <div class="media">
+                            <i class="fas fa-quote-left fa-2x"></i>
+
+                            <div class="flex-container" >
+                                <div class="round-images" id="img-block-1">
+                                </div>
+
+                                <hr class="block-divider2 nothorzleft">
+
+                                <div class="flex-container stars">
+                                <i class="fas fa-star-half-alt fa-lg"></i>
+                                <i class="far fa-star fa-lg"></i>
+                                <i class="far fa-star fa-lg"></i>
+                                <i class="far fa-star fa-lg"></i>
+                                <i class="far fa-star fa-lg"></i>
+                                </div>
+
+                                <div class="media-body">
+                                    <blockquote class="blockquote">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                            Dolor animi illo ab beatae unde iste et expedita vel dolores 
+                                            iusto! Libero ut laudantium.</p>
+                                        <p class="quote-name">Michael Easton</p>
+                                    </blockquote>
+                                </div>
+                            </div>
+
+                            <i class="fas fa-quote-right fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+
+                    <hr class="block-divider">
+
+<!--Q block 2--><div class="row quoteblock quoteblock-right">
+                    <div class="col-11">
+                        <div class="media">
+                            <i class="fas fa-quote-left fa-2x"></i>
+
+                            <div class="flex-container reversed" >
+                                <div class="round-images" id="img-block-2">
+                                </div>
+
+                                <hr class="block-divider2 nothorzright">
+
+                                <div class="flex-container stars">
+                                <i class="fas fa-star fa-lg"></i>
+                                <i class="fas fa-star fa-lg"></i>
+                                <i class="fas fa-star fa-lg"></i>
+                                <i class="far fa-star fa-lg"></i>
+                                <i class="far fa-star fa-lg"></i>
+                                </div>
+
+                                <div class="media-body">
+                                    <blockquote class="blockquote">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                            Dolor animi illo ab beatae unde iste et expedita vel dolores 
+                                            iusto! Libero ut laudantium.</p>
+                                        <p class="quote-name">Thomas & Rebecca</p>
+                                    </blockquote>
+                                </div>
+                            </div>
+
+                            <i class="fas fa-quote-right fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+
+                    <hr class="block-divider">
+
+<!--Q block 3--><div class="row quoteblock quoteblock-left">
+                    <div class="col-11">
+                        <div class="media">
+                             <i class="fas fa-quote-left fa-2x"></i>
+
+                            <div class="flex-container" >
+                                <div class="round-images" id="img-block-3">
+                                </div>
+
+                                <hr class="block-divider2 nothorzleft">
+
+                                <div class="flex-container stars">
+                                <i class="fas fa-star fa-lg"></i>
+                                <i class="fas fa-star-half-alt fa-lg"></i>
+                                <i class="far fa-star fa-lg"></i>
+                                <i class="far fa-star fa-lg"></i>
+                                <i class="far fa-star fa-lg"></i>
+                                </div>
+
+                                <div class="media-body">
+                                    <blockquote class="blockquote">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                            Dolor animi illo ab beatae unde iste et expedita vel dolores 
+                                            iusto! Libero ut laudantium.</p>
+                                        <p class="quote-name">Tara Akiyo Race</p>
+                                    </blockquote>
+                                </div>
+                            </div>
+
+                            <i class="fas fa-quote-right fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+
+                    <hr class="block-divider">
+
+<!--Q block 1--><div class="row quoteblock quoteblock-right">
+                    <div class="col-11">
+                        <div class="media">
+                            <i class="fas fa-quote-left fa-2x"></i>
+
+                            <div class="flex-container reversed" >
+                                <div class="round-images" id="img-block-4">
+                                </div>
+
+                                <hr class="block-divider2 nothorzright">
+
+                                <div class="flex-container stars">
+                                <i class="fas fa-star fa-lg"></i>
+                                <i class="fas fa-star-half-alt fa-lg"></i>
+                                <i class="far fa-star fa-lg"></i>
+                                <i class="far fa-star fa-lg"></i>
+                                <i class="far fa-star fa-lg"></i>
+                                </div>
+
+                                <div class="media-body">
+                                    <blockquote class="blockquote">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                            Dolor animi illo ab beatae unde iste et expedita vel dolores 
+                                            iusto! Libero ut laudantium.</p>
+                                        <p class="quote-name">Lucas Joyce</p>
+                                    </blockquote>
+                                </div>
+                            </div>
+
+                            <i class="fas fa-quote-right fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+</section>
+
+<!-- Jumbotron  service -->
+<section class="jumbotron jumbotron-fluid" id="nav-service">
+        <div class="container">
+                <h2 class="section-title">Service</h2>
+                <hr class="block-divider">
+            </div>
+
+
+<div class="container col-12">
+    <div class="row">
+        <div class="service-block col-xs-6 col-sm-4">
+            <div class="card">
+               
+            </div>
+        </div>
+        <div class="service-block col-xs-6 col-sm-4">
+            <div class="card">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Praesentium facere mollitia autem voluptas repellendus, 
+                        beatae illo quas ad possimus neque odit recusandae 
+                        architecto minus accusantium quis error, voluptatem dolorum cum.</p>
+            </div>
+        </div>
+        <div class="service-block col-xs-6 col-sm-4">
+            <div class="card"><i class="fas fa-sign-language fa-4x"></i>
+              
+            </div>
+        </div>
+        <div class="service-block col-xs-6 col-sm-4">
+            <div class="card">
+                
+            </div>
+        </div>
+        <div class="service-block col-xs-6 col-sm-4">
+            <div class="card">
+                 
+            </div>
+        </div>
+        <div class="service-block col-xs-6 col-sm-4">
+            <div class="card">
+                
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- Jumbotron  booking -->
+<section class="jumbotron jumbotron-fluid" id="nav-booking">
+            <div class="container">
+                <h2 class="section-title">Booking</h2>
+                <hr class="block-divider">
+            </div>
+</section>
+
+<!-- Jumbotron  contact -->
+<section class="jumbotron jumbotron-fluid" id="nav-contact">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <hr class="block-divider">
+            </div>
+            <div class="col-8">
+                    <h3 class="contact-heading uppercase text-center">Got a project in mind?</h3>
+                    <h5 class="uppercase text-center">Let's work together!</h5>
     
+                    <div class="center-form">
+                        <form>
+                            <input 
+                                type="text" 
+                                name="name" 
+                                id="fullname" 
+                                class="form-control" 
+                                placeholder="name" 
+                                required />
+
+                            <input 
+                                type="text" 
+                                name="email" 
+                                id="emailaddress" 
+                                class="form-control" 
+                                placeholder="email" 
+                                required />
+                                
+                            <textarea 
+                                name="projectsummary" 
+                                id="projectsummary" 
+                                rows="5" 
+                                class="form-control" 
+                                placeholder="project description" 
+                                required>
+                            </textarea>
+
+                            <div class="form-row text-center">
+                                <div class="col">
+                                    <input
+                                        class="btn btn-warning"
+                                        type="submit"
+                                        value="Send">
+                                    
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+
+
+<footer class="footer-link">
+<div class="expaind row">
+    <div class="block-set col-lg-6">
+        <div class="link-items col-sm-4 col-lg-4">
+            <a href="">The Snow Centre</a>
+            <img src="https://www.thesnowcentre.com/images/logo.png" 
+                alt="">
+        </div>
+        <div class="link-items col-sm-4 col-lg-4">
+            <a href="">Big Rock</a>
+            <img src="https://www.bigrockclimbing.com/wp-content/uploads/big-rock-logo-grey.png" 
+                alt="">
+        </div>
+        <div class="link-items col-sm-4 col-lg-4">
+            <a href="">King Surf School</a>
+            <img id="surfkinglogo" 
+                src="https://www.kingsurf.co.uk/wp-content/themes/kingsurf/images/kingsurf-badge-logo.png" 
+                alt="">
+        </div>
+    </div>
+    <div class="block-set col-lg-6">
+        <div class="link-items col-sm-4 col-lg-4">
+            <a href="">H.O.F.N.A.R</a>
+            <img id="hofnar" 
+                src="https://i0.wp.com/hofnar.com/wp-content/uploads/2018/08/hofnar-white.png?w=512&ssl=1" 
+                alt="">
+        </div>
+        <div class="link-items col-sm-4 col-lg-4">
+            <a href="">Box End Park</a>
+            <div><img src="https://www.boxendpark.com/resources/uploads/configuration/box-end-park-logo.png" 
+                alt=""></div>
+        </div>
+        <div class="link-items col-sm-4 col-lg-4">
+            <a href="https://www.xsplash.biz">Xsplash</a><img src="#" alt="">
+        </div>
+    </div>
+</div>
+</footer>
+</section>
+
 </body>
 </html>

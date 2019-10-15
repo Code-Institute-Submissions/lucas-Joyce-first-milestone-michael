@@ -1,4 +1,4 @@
-/*=============== General ==============*/
+/*============================================================= General ==================================================================*/
 
 @import url('https://fonts.googleapis.com/css?family=Exo|Fira+Sans&display=swap:100,200,300,400,500,600,700,800,900|Fira+sans:100,200,300,400,500,600,700,800,900');
 
@@ -6,17 +6,39 @@ body {
     font-family:  'Fira Sans', 'Exo', sans-serif;
     font-size: 17px;
     color: whitesmoke;
+    height: 100%;
 }
 
+/*----------------- General Temporay Stuff --------------------*/
 
-/*------------- BG-Colors --------------*/
+/*
+<i class="fas fa-sign-language"></i>
+<i class="far fa-sign-language"></i>
+*/
 
-/*#nav-index {
-  background-color: yellowgreen;
+
+
+
+
+
+
+/*--------------------------------------------------------------- BG-Colors ----------------------------------------------------------------*/
+
+#nav-index {
+    background-image: linear-gradient(black, black), url(../images/home/sunset.jpg);
+    background-blend-mode: saturation;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    margin-bottom: 0px;
+    z-index: -6;
+    padding: 0;
+    margin: 0;
 }
-#nav-about {
-  background-color: blueviolet;  min-width: 100vw;
-}*/
+#nav-about { /* NOTE- this is not Bg images due to Carousel */
+  padding: 0;
+  display: flex;
+}
 #nav-ex {
   background-image: linear-gradient(black, black), url(../images/experience/img-bg-climb.jpg);
   background-blend-mode: saturation;
@@ -25,6 +47,7 @@ body {
   padding:0;
   margin: 0;
   min-height:100vh;
+  display: grid;
 }
 #nav-test {
   background-image: linear-gradient(black, black), url(../images/experience/img-climb3.JPG);
@@ -66,131 +89,42 @@ body {
   margin: 0;
   min-height:100vh;
 }
+/*--------------------------------------------------------------- END ---------------------------------------------------------------------*/
+
+/*========================================================== END OF General ===============================================================*/
 
 
 
-/*============= Navigation ==========<i class="fas fa-sign-language"></i>==<i class="far fa-sign-language"></i>=*/
+
+/*============================================================= Navigation ===============================================================*/
 
 
-/*--------------- Michael's button style ----------------*/
 
-input[type=button], input[type=submit], input[type=reset] {
+
+/*------------------------ Button Style ----------------*/
+input[type=button], 
+input[type=submit], 
+input[type=reset] {
   background-color: #178bf7;
   border: 2px solid coral;
   color: whitesmoke;
   padding: 8px 30px;
   text-decoration: none;
-  margin: 4px 2px;
+  margin: 10px;
   cursor: pointer;
   border-radius:10px;
   font-family: 'Fira Sans', sans-serif;
   font-size: large;
+  margin-top: auto;
 }
+/*------------------------- END -------------------------*/
 
-
-
-
-
-
-
-
-
-
-
-/*============= Jumbotron  =============*/
-
-/*--------------- Michael's title style ----------------*/
-.jumbotron {
-  padding: 20px;
-  margin: 0;
-  background-color: transparent;
-  
-}
-.section-title {
-    text-align: center;
-    font-variant: small-caps;
-    letter-spacing: 6px;
-    padding-top: 20px;
-}
-
-.block-divider {
-    border-top: 4px solid #178bf7;
-    max-width: 250px;
-    height: 5px;
-}
-
-.block-divider2 {
-  border-top: 4px solid coral;
-  max-width: 250px;
-  height: 5px;
-}
-
-
-/*--------------- Index ----------------*/
-#nav-index {
-    background-image: linear-gradient(black, black), url(../images/home/sunset.jpg);
-    background-blend-mode: saturation;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 100vh;
-    margin-bottom: 0px;
-    z-index: -6;
-    padding: 0;
-    margin: 0;
-}
-
+/*------------------- Dropdown Style --------------------*/
 .navbar {
   justify-content: flex-end;
   background-color: transparent;
   margin-right: 80px;
 }
-
-.nav-top-title {
-  display: flex;
-  justify-content: flex-end;
-  padding-left: 70px;
-  padding-right: 20px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  width: 100%;
-  text-align: center;
-}
-
-.backtofitness {
-  padding-right: 0px;
-  font-style: italic;
-  display: flex;
-  margin: 0;
-}
-.backtofitness span {
-  font-weight: bold; 
-}
-
-/* 
-  font sizes as follow
-   fa-2x = 2em
-   fa-3x = 3em
-   fa-4x = 4em
-   fa-5x = 5em
-              */
-
-.fa-angle-double-right {
-  font-size: 2em;
-}
-.fa-angle-double-left {
-  font-size: 5em;
-}
-.fa-running {
-  font-size: 4em;
-  align-self: center;}
-
-
-
-
-
-
-
-
 #bars-icon {
   top: 50px;
   float: right;
@@ -202,18 +136,13 @@ input[type=button], input[type=submit], input[type=reset] {
   background-color: coral;
   border: 2px solid  #178bf7;
   color: #178bf7;
-  
 }
-
 #bars-icon:hover {
-    background-color: #178bf7;
-    border: 2px solid coral;
-    color: coral;
-    transition: background-color .10s ease-in-out, color .10s ease-in-out;
-    
+  background-color: #178bf7;
+  border: 2px solid coral;
+  color: coral;
+  transition: background-color .10s ease-in-out, color .10s ease-in-out;
 }
-
-
 .dropdown {
   position: absolute;
   z-index: 1;
@@ -226,31 +155,16 @@ input[type=button], input[type=submit], input[type=reset] {
   font-weight: bold;
   font-size: large;
   width: 350px;
-  top: 107px;
+  top: 103px;
   right: 43px;
   margin: 0px;
   padding: 0;
   z-index: -1;
-  
 }
- 
-
-  /* background-color: transparent;  
-  transition: transform .5s ease-in-out;box-shadow: -56px 39px 35px -10px rgba(0,0,0,0.25);
-  background-color#0997d3;#0982b6
-  background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(0, 89, 255));*/
-
-
-  .dropdown:hover .dropdown-content {
-    display: block;
-    transition: display .3s ease-in-out, color .3s ease-in-out;
-  }
-
-
-
-
-
-
+.dropdown:hover .dropdown-content {
+  display: block;
+  transition: display .3s ease-in-out, color .3s ease-in-out;
+}
 .dropdown-item {
   font-family: inherit;
   text-decoration: none;
@@ -264,11 +178,9 @@ input[type=button], input[type=submit], input[type=reset] {
   background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(75, 75, 80));
   background-color: transparent;
 }
- /**/
 a {
   color: coral;
 }
-
 a:hover { 
   color: whitesmoke;
   font-weight: bolder;
@@ -276,50 +188,161 @@ a:hover {
   background-color: transparent;
   transition: font-weight .3s ease-in-out, color .3s ease-in-out;
 }
+/*------------------------- END -------------------------*/
+
+/*======================================================== END OF Navigation ============================================================*/
 
 
 
 
+
+
+
+
+
+/*=========================================================== Jumbotron  ===============================================================*/
+.jumbotron {
+  padding: 20px;
+  margin: 0;
+  background-color: transparent;
+}
+
+
+
+/*--------------- Jumbotron heading style ----------------*/
+.section-title {
+    text-align: center;
+    font-variant: small-caps;
+    letter-spacing: 6px;
+    padding-top: 20px;
+}
+.block-divider {
+    border-top: 4px solid #178bf7;
+    max-width: 250px;
+    height: 5px;
+}
+.block-divider2 {
+  border-top: 4px solid coral;
+  max-width: 250px;
+  height: 5px;
+}
+/*------------------------- END -------------------------*/
+
+
+
+
+
+/*----------------------------------------------------------------- INDEX ------------------------------------------------------------------*/
 
 #index-display {
   margin-top: 10%;
   margin-left: 10%;
   margin-right: auto;
 }
-#btn-index {
-  margin: 40px;
+.name{
+  letter-spacing: 6px;
+  word-spacing: 10px;
 }
 .icon-button {
-  align-content: space-between;
+  display: block;
+  text-align: center;
+  text-align: -webkit-center;
+  -moz-text-align: center;
+  padding: 3px;
+  word-spacing: 30px;
 }
+#btn-index {
+  display: block;
+  margin: 15px auto;
+}
+
 .btn-info {
   border-radius: 10px;
   color: coral;
   font-style: bold;
   border: 2px solid coral;
 }
-.name{
-  letter-spacing: 6px;
-  word-spacing: 10px;
-}
-/*-------------(Modal-Form) ------------*/
 
+/*------------------------- Heading Logo --------------------*/
 
-
-
-
-
-
-/*--------------- about ----------------*/
-#nav-about{
-  padding: 0;
+.nav-top-title {
   display: flex;
+  justify-content: flex-end;
+  padding-left: 70px;
+  padding-right: 20px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  width: 100%;
+  text-align: center;
+}
+.backtofitness {
+  padding-right: 0px;
+  font-style: italic;
+  display: flex;
+  margin: 0;
+}
+.backtofitness span {
+  font-weight: bold; 
+}
+.fa-angle-double-right {
+  font-size: 2em;
+}
+.fa-angle-double-left {
+  font-size: 5em;
+}
+.fa-running {
+  font-size: 4em;
+  align-self: center;
+}
+
+/*------------------------- END -------------------------*/
+
+
+/*---------------------- Modal-Form ---------------------*/
+.modal {
+  text-align: left;
+}
+.modal-dialog {
+  width: auto;
+}
+.modal-content {
+  color: #000;
+  font-family: inherit;
+  border: 2px solid coral;
+  border-radius: 20px;
+  width: fit-content;
+}
+.modal-header {
+  border-bottom: 2px solid blue;
+}
+.mca {
+  width: 100%;
+}
+#exit-button {
+  font-size: 1em;
+}
+
+/*------------------------- END -------------------------*/
+
+
+
+/*----------------------------------------------------------- END OF INDEX ------------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------------- ABOUT ---------------------------------------------------------------------*/
+
+#profile-img {
+  background-image: url(../images/about/michaeleaston.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  height: 100vh;
 }
 .frontabout {
-    display: flex;
-    align-items: center;
-    background-color: transparent;
-    
+  display: flex;
+  align-items: center;
+  background-color: transparent;
 }
 .container-about{
   color: white;
@@ -329,19 +352,12 @@ a:hover {
   border-radius: 20px;
   border: 2px solid coral;
   background-color: rgba(133, 131, 131, 0.322);
-
 }
 
-#profile-img {
-    background-image: url(../images/about/michaeleaston.png);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: contain;
-    height: 100vh;
 
-}
 
-/*--------------(carousel) --------------*/
+/*------------------------------- carousel ---------------------------*/
+
 .jumbotron-carousel {
   margin-bottom: 0px;
 }
@@ -372,17 +388,23 @@ a:hover {
   background-image: url(../images/about/carousel/desert.jpg);
 }
 
-/*------------- experience -------------*/
+/*-------------------------------END ----------------------------------*/
+
+
+
+/*----------------------------------------------------------- END OF ABOUT ------------------------------------------------------------------*/
+
+
+
+
+/*------------------------------------------------------------ EXPERIENCE -------------------------------------------------------------------*/
 
 .date {
   padding: 20px;
 }
-
 .btn-ex {
-     position: absolute;
-     bottom: 20px;
-     align-self: center;
-     align-content: center;
+  position: relative;
+  align-content: center;
 }
 .align-self-center i {
   padding: 10px;
@@ -393,33 +415,99 @@ a:hover {
   color: coral;
 }
 .card-a {
-    border: 2px solid coral;
-    background-color: rgba(189, 183, 183, 0.438);
-    height: 550px;
+  border: 2px solid coral;
+  background-color: rgba(189, 183, 183, 0.438);
+  height: 550px;
 }
 .card-item {
-  /*font-family:  'Fira Sans', sans-serif;*/
   padding:15px;
 }
 .card-body {
   padding:6px;
+  text-align: center;
+  display: contents;
 }
 .card-title {
-  color: #178bf7;
+  color: coral;
   text-align: center;
   font-weight: bold;
   letter-spacing: 4px;
+  font-size: x-large;
 }
 .modified-row {
   padding-bottom: 30px;
   padding-top: 30px;
   margin-bottom: 0px;
 }
-/*-----------(Modal-Carousel) ----------*/
+
+
+/*-------------------------------------(Modal-Carousel) -----------------------------------------------*/
+.crossx {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  z-index: 2;
+  color: whitesmoke;
+  font-size: 2em;
+}
+.fa-chevron-circle-left,
+.fa-chevron-circle-right {
+  font-size: xx-large;
+  padding: 10px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  border-radius: 20px;
+}
+.carousel-control-prev {
+  background-image: linear-gradient(to right, rgba(255,127,80,1), rgba(255,0,0,0));
+}
+.carousel-control-next {
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,127,80,1));
+}
+.carousel-caption {
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,127,80,1), rgba(255,0,0,0));
+}
+.carousel-indicators li {
+  width: 70px;
+  height: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.carousel-indicators {
+  margin-bottom: 20px;
+}
+.carousel-item img { 
+  max-height: calc(100vw - 60px);
+
+}
+
+/*#Caro-Ski-img-1 {
+  background-image: url(../images/experience/img-climb1.JPG);
+
+}
+  background-position: center;
+  background-size: 120%;
+
+
+#Caro-PT-img-1 {}
+
+#Caro-CI-img-1 {}
+
+#Caro-LG-img-1 {}*/
+
+/*----------------------------------------------------- END -----------------------------------------------*/
+
+
+/*---------------------------------------------------------- END OF EXPERIENCE ---------------------------------------------------------------*/
 
 
 
-/*------------- Testimonials ------------*/
+
+
+/*------------------------------------------------------------ TESIMONIALS -------------------------------------------------------------------*/
 
 .round-images {
   border-color: 4px coral;
@@ -428,7 +516,6 @@ a:hover {
   height: 120px;
   border-radius: 50%;
 }
-
 .stars {
   color:coral;
   display: flex;
@@ -436,41 +523,33 @@ a:hover {
   padding: 20px;
   margin-bottom: 15px;
 }
-
-
-
 .fa-quote-left {
-padding-right: 40px;
-color:coral;
+  padding-right: 40px;
+  color:coral;
 }
-
 .fa-quote-right {
   padding-left: 40px;
   align-self: flex-end;
   float: right;
   color:coral;
 }
-
 .flex-container i {
  padding: 6px;
- 
 }
-
-  .quoteblock-right {
+.quoteblock-right {
   justify-content: center;
-  }
-  .quoteblock-left {
+}
+.quoteblock-left {
   justify-content: center;
-  }
+}
 .flex-container {
   display: block;
   text-align: center;
   text-align: -webkit-center;
   -moz-text-align: center;
   padding: 0px;
-
 }
-.media{
+.media {
    display: block;
    flex-direction: column;
 }
@@ -480,17 +559,15 @@ color:coral;
   padding: 10px;
 }
 .quoteblock {
-padding: 25px;
-margin-bottom: 0px;
-justify-content: center;
+  padding: 25px;
+  margin-bottom: 0px;
+  justify-content: center;
 }
-
 .quote-name {
   align-items:center;
   font-weight: bold;
   text-align: center;
 }
-
 #img-block-1 {
   background-image: url(../images/testimonials/michaeleaston.png);
   background-position-y: 0px;
@@ -516,13 +593,16 @@ justify-content: center;
   transform: rotate(90deg);
 }
 
-/*------------- service ------------<i class="fas fa-sign-language"></i>==<i class="far fa-sign-language"></i>*/
+/*------------------------------------------------------------END OF  TESIMONIALS -------------------------------------------------------------*/
+
+
+
+/*----------------------------------------------------------------- SERVICE -------------------------------------------------------------------*/
 
 .service-block {
   position: relative;
   display: flex;
   flex-direction: column;
- 
   width: 300px;
   height: 300px;
   margin: 3% auto;
@@ -530,32 +610,41 @@ justify-content: center;
 }
 
 .card {
+  background-color: rgba(189, 183, 183, 0.438);
   flex: auto;
-   border-radius: 15px;
-   padding: 15px;
+  border-radius: 15px;
+  padding: 15px;
 }
 
-/*------------- contact -------------*/
+/*-----------------------------------------------------------------END OF SERVICE --------------------------------------------------------------*/
 
-/*=============== Footer ===max-width: fit-content;=align-items:  box-sizing: border-box; center;==align-self: flex-start;==  width: fit-content; .link-items img {
-  display: block;
-  
-  height: 150px;
-} height: 200px;=======*/
 
-/*#surfkinglogo,
-#hofnar {
-  background-color: #000;
-}.footer-link:hover {
-  height:100%;  height:40px;
-}width: fit-content;*/
+/*------------------------------------------------------------------- BOOKING ------------------------------------------------------------------*/
+/*-----------------------------------------------------------------END OF BOOKING --------------------------------------------------------------*/
+
+/*------------------------------------------------------------------- CONTACT ------------------------------------------------------------------*/
+/*-----------------------------------------------------------------END OF CONTACT --------------------------------------------------------------*/
+
+
+
+/*=============================================================== END OF JUMBOTRON  ============================================================*/
+
+
+
+
+
+/*=================================================================== FOOTER  ==================================================================*/
+
 .footer-link {
-  position: static;
+  position: relative;
+  background-attachment: scroll;
+  height:40px;
   margin: 0;
   padding: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  min-height: 100%;
 }
 .expaind:hover {
   height: 250px;
@@ -566,10 +655,9 @@ justify-content: center;
   height:40px;
   transition: height .3s ease-in-out, color .3s ease-in-out;
   position: relative;
-  bottom: -305px;
+  bottom: 0px;
   left: 0;
   right:0;
-  display: inline-table;
   padding-top: 8px;
   align-items: flex-start;
   margin-bottom: 0px;
@@ -594,15 +682,127 @@ img {
   padding: 0px;
   object-fit:cover;
   max-width: 100%;
-  margin-bottom: 20px;
+  border-radius: 20px;
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
 }
 
-/*=============== Media  ===============*/
+/*============================================================ END OF FOOTER  ==================================================================*/
 
-/* === mobile phones === */
-@media screen and (min-width: 360px) { 
 
-/*------------- index ------------*/
+
+
+/*============================================================= @MEDIAS  =======================================================================*/
+
+/* ======================================================== mobile phones ==== */
+@media screen and (max-width: 320px) { 
+/*-------------------------------------------------------------- index --------*/
+#index-display {
+  margin-top: 10%;
+  margin-left: 3%;
+}
+/*---------------------------------------- Heading Logo --*/
+      .fa-angle-double-left {
+        display: none;
+      }
+      .fa-running {
+        display: none;
+      }
+      .fa-angle-double-right {
+        font-size: 1em;
+      }
+      .navbar {
+        margin-right: 50px;
+      }
+      .nav-top-title {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+      #backtothefitness {
+        font-size: 1.5em;
+      }
+/*---------------------------------- End of Heading Logo --*/
+
+/*------------------------------------------- Navigation --*/
+      #bars-icon {
+        top: 10px;
+      }
+      .dropdown-content {
+        top: 66px;
+        right: 14px;
+      }
+/*------------------------------------ End of Navigation --*/
+
+/*-------------------------------------------------------------- About --------*/
+      #profile-img {
+        display:none;
+      }
+      .jumbotron-carousel-inner {
+        display: none;
+      }
+/*-------------------------------------------------------- End of About --------*/
+
+/*------------------------------------------------------------ experience ------*/
+      .modified-row {
+        margin-left: -15px;
+        margin-right: -15px;
+      }
+      .modified-container {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+
+/*------------------------------------------- Carousel --*/
+      .carousel-caption {
+        display: none;
+      }
+      .carousel-indicators li {
+        width: 40px;
+        height: 5px;
+        margin-right: 3px;
+        margin-left: 3px;
+      }
+      .carousel-indicators {
+      margin-bottom: 3px;
+      }
+/*------------------------------------- end of Carousel --*/
+
+/*--------------------------------------------------- end of experience --------*/
+}
+/*--------------------------------------------------END OF (max-width: 320px)---*/
+
+/* ========================================================= mobile phones === */
+@media screen and (min-width: 360px) and (max-width: 767px) and (orientation: landscape) {
+/*-------------------------------------------------------------- index --------*/
+      #index-display {
+        margin-top: 0%;
+        margin-left: 3%;
+      }
+      .name {
+        letter-spacing: 10px;
+      }
+      .title {
+        font-size: 15px;
+        margin-bottom: 0px;
+      }
+      .block-divider {
+        margin-bottom: 5px;
+        margin-top: 5px;
+      }
+      .mca {
+        font-size: 14px;
+        flex-direction: row;
+      }
+      .modal-title {
+        display: none;
+      }
+      .modal-header {
+        display: inline-flex;
+        align-items: normal;
+      }
+/*---------------------------------------- Heading Logo --*/
 .fa-angle-double-left {
   font-size: 2.5em;
 }
@@ -612,143 +812,266 @@ img {
 .fa-running {
   display: none;
   font-size: 2.1em;
-  align-self: center;}
-
+  align-self: center;
+}
 #backtothefitness {
   font-size: 1.5em;
 }
 .navbar {
   margin-right: 50px;
 }
-#bars-icon {
-  top: 10px;
-}
 .nav-top-title {
   padding-left: 5px;
   padding-right: 5px;
 }
+/*---------------------------------- End of Heading Logo --*/
+
+/*------------------------------------------- Navigation --*/
+#bars-icon {
+  top: 10px;
+}
 .dropdown-content {
   top: 66px;
   right: 14px;
+  font-size: medium;
 }
+.dropdown-item {
+  padding: 5px;
+}
+/*------------------------------------ End of Navigation --*/
 
-/*------------- About ------------*/
+/*-------------------------------------------------------------- About --------*/
 #profile-img {
   display:none;
 }
 .jumbotron-carousel-inner {
   display: none;
 }
-} 
-
-
-@media screen and (max-width: 320px) { 
-.fa-angle-double-left {
+.carousel-caption {
   display: none;
 }
-.fa-running {
-  display: none;
+.carousel-indicators li {
+  width: 40px;
+  height: 5px;
+  margin-right: 3px;
+  margin-left: 3px;
 }
-.fa-angle-double-right {
-  font-size: 1em;
+.carousel-indicators {
+margin-bottom: 3px;
 }
-#bars-icon {
-  top: 10px;
-}
-.navbar {
-  margin-right: 50px;
-}
-#backtothefitness {
-  font-size: 1.5em;
-}
-.nav-top-title {
-  padding-left: 5px;
-  padding-right: 5px;
-}
-#profile-img {
-  display:none;
-}
-.jumbotron-carousel-inner {
-  display: none;
-}
-.dropdown-content {
-  top: 66px;
-  right: 14px;
-}
-}
+/*-------------------------------------------------------- End of About --------*/
 
-
-  /* === tablet === */
-@media screen and (min-width: 768px) {
-
-  .fa-angle-double-right {
-    font-size: 2em;
-  }
-  .fa-angle-double-left {
-    font-size: 5em;
-  }
-  .fa-running {
-    font-size: 4em;
-    align-self: center;
-  display:block;}
-  
-  #backtothefitness {
-  font-size: 3em;
-}
-.navbar {
-  margin-right: 80px;
-}
-#bars-icon {
-  top: 50px;
-}
-.dropdown-content {
-  top: 107px;
-  right: 43px;
-}
-  
-  
-/*------------- About ------------*/
-  #profile-img {
-    display: flex;
-    background-position: bottom;
-    background-size: contain;
+/*------------------------------------------------------------ experience ------*/
+.modified-row {
+  margin-left: -15px;
+  margin-right: -15px;
 }
 .modified-container {
-  max-width: 780px;
+  padding-left: 0px;
   padding-right: 0px;
 }
-.frontabout {
-  align-items: flex-start;
-}
-.jumbotron-carousel-inner {
-  display: flex;
-}
+/*--------------------------------------------------- end of experience --------*/
+} 
+/*------------------------------ END OF (min-width: 360px) (orientation: landscape)---*/
 
+
+@media screen and (min-width: 360px)and (max-width: 767px) and (orientation: portrait) { 
+/*-------------------------------------------------------------- index --------*/
+      #index-display {
+        margin-top: 10%;
+        margin-left: 3%;
+      }
+/*---------------------------------------- Heading Logo --*/
+      .fa-angle-double-left {
+        font-size: 2.5em;
+      }
+      .fa-angle-double-right {
+        font-size: 1em;
+      }
+      .fa-running {
+        display: none;
+        font-size: 2.1em;
+        align-self: center;
+      }
+      #backtothefitness {
+        font-size: 1.5em;
+      }
+      .navbar {
+        margin-right: 50px;
+      }
+      .nav-top-title {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+/*---------------------------------- End of Heading Logo --*/
+
+/*------------------------------------------- Navigation --*/
+      #bars-icon {
+        top: 10px;
+      }
+      .dropdown-content {
+        top: 66px;
+        right: 14px;
+        font-size: medium;
+      }
+      .dropdown-item {
+        padding: 5px;
+      }
+/*------------------------------------ End of Navigation --*/
+
+/*-------------------------------------------------------------- About --------*/
+      #profile-img {
+        display:none;
+      }
+      .jumbotron-carousel-inner {
+        display: none;
+      }
+      .carousel-caption {
+        display: none;
+      }
+      .carousel-indicators li {
+        width: 40px;
+        height: 5px;
+        margin-right: 3px;
+        margin-left: 3px;
+      }
+      .carousel-indicators {
+      margin-bottom: 3px;
+      }
+/*-------------------------------------------------------- End of About --------*/
+
+/*------------------------------------------------------------ experience ------*/
+      .modified-row {
+        margin-left: -15px;
+        margin-right: -15px;
+      }
+      .modified-container {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+/*--------------------------------------------------- end of experience --------*/
+} 
+/*------------------------- END OF (min-width: 360px) (orientation: portrait)---*/
+
+
+/* ================================================ mobile phone Horzonal ======*/
+@media screen and (min-width: 576px) {
+
+      .modal-dialog {
+          min-width: 660px; /*formerly at 730px*/
+        }
 }
+/*--------------------------------------------------END OF (min-width: 576px)---*/
+
+/* =================================== Mini-Tablet / mobile phone Horzonal======*/
+@media screen and (min-width: 768px) {
+/*-------------------------------------------------------------- index --------*/
+/*---------------------------------------- Heading Logo --*/
+      .fa-angle-double-right {
+        font-size: 2em;
+      }
+      .fa-angle-double-left {
+        font-size: 5em;
+      }
+      .fa-running {
+        font-size: 4em;
+        align-self: center;
+        display:block;
+      }
+      #backtothefitness {
+        font-size: 3em;
+      }
+      .navbar {
+        margin-right: 80px;
+      }
+/*---------------------------------- End of Heading Logo --*/
+
+/*------------------------------------------- Navigation --*/
+      #bars-icon {
+        top: 50px;
+      }
+      .dropdown-content {
+        top: 104px;
+        right: 43px;
+        font-size: large;
+      }
+  
+/*-------------------------------------------------------------- About --------*/
+      #profile-img {
+        display: flex;
+        background-position: bottom;
+        background-size: contain;
+      }
+      .jumbotron-carousel-inner {
+        display: flex;
+      }
+      .frontabout {
+        align-items: flex-start;
+      }
+      .modified-container {
+        max-width: 780px;
+        padding-right: 0px;
+      }
+/*-------------------------------------------------------- End of About --------*/
+
+/*------------------------------------------------------------ experience ------*/
+      .carousel-caption {
+        display: block;
+      }
+      .carousel-indicators li {
+        width: 70px;
+        height: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+      .carousel-indicators {
+        margin-bottom: 20px;
+        }
+/*--------------------------------------------------- end of experience --------*/
+}
+/*--------------------------------------------------END OF (min-width: 768px)---*/
+
+
+/* ======================================================  Tablet portrat ======*/
 @media screen and (min-width: 992px) {
-.modified-container {
-    max-width: 960px;
-  }
-  .frontabout {
-    align-items: center;
-  }
+/*-------------------------------------------------------------- About --------*/
+      .frontabout {
+        align-items: center;
+      }
+      .modified-container {
+        max-width: 960px;
+      }
+/*-------------------------------------------------------- End of About --------*/
 }
+/*--------------------------------------------------END OF (min-width: 960px)---*/
+
+
+/* ====================================================== Tablet Horzonal ======*/
 @media screen and (min-width: 1024px) {
+/*-------------------------------------------------------------- About --------*/
+      #profile-img {
+        background-position: top;
+        background-size: cover;
+      }
+      .modified-container {
+        padding-right: 15px;
+      }
+/*-------------------------------------------------------- End of About --------*/
 
-  .modal-dialog{
-  max-width: 980px;
-  }
- 
-/*------------- About ------------*/
-  #profile-img {
-    background-position: top;
-    background-size: cover;
+/*------------------------------------------------------------ experience ------*/
+.carousel-caption {
+  display: block;
 }
- .modified-container {
-    padding-right: 15px;
+/*--------------------------------------------------- end of experience --------*/
+
+  
+.modal-dialog{
+  max-width: 980px;
+  max-height: 700px;
   }
 
-  /*------------- Testimonials ------------*/
+
+  /*---------------------------------------------------------- Testimonials ---*/
   .fa-star-half-alt {
   transform: rotate(-90deg);
   }
@@ -777,17 +1100,17 @@ img {
   .quoteblock-left {
   justify-content: flex-start;
   }
-  .round-images {
-    width: 150px;
-    height: 150px;
-    border-radius: 10%;
-  }
-  .flex-container {
+.round-images {
+  width: 150px;
+  height: 150px;
+  border-radius: 10%;
+}
+.flex-container {
   display: flex;
   align-items: center;
   padding: 15px;
-  }
-  .nothorzright {
+}
+.nothorzright {
   border-left: 3px solid coral;
   border-top: 0;
   padding: 10px;
@@ -802,8 +1125,11 @@ img {
 .media-body {
   min-height: 130px;
 }
+/*--------------------------------------------------- end of Testimonials ---*/
 }
-/* === destop computers === */
+/*-------------------------------------------------END OF (min-width: 1024px)---*/
+
+/*======================================================= destop computers ==== */
   @media screen and (min-width: 1280px) { 
 
   .modal-dialog{
@@ -813,26 +1139,17 @@ img {
 }
 @media screen and (min-width: 1440px) { 
 .modal-dialog{
-  max-width: 1400px;
+  max-height: 100%;
 }  
 
 
 }
+
+
+
+
+
 /*------------- Testimonials ------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* orientation
   @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
     html {

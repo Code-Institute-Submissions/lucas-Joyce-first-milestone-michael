@@ -119,6 +119,7 @@ Simple navigation bar - scroll pages
 - www.w3schools.com
 - www.getbootstrap.com
 - www.tympanus.net
+- https://stackoverflow.com/questions/28791970/how-to-limit-the-height-of-the-modal
 
 ##### future feature to be add
 calendar to be sychonised and bookings comfirmation. probably in Javascripts.

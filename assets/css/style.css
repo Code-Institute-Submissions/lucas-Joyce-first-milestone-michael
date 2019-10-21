@@ -17,8 +17,60 @@ body {
 */
 
 
+/*---------------------- Modal-Form ---------------------*/
 
+.modal { /*this is the fix form that should be for all modal*/
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.726);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 1;
+  z-index: 1050;
+  transition: all 0.3s;
+  text-align: left;
+  margin:40px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 0px;
+  padding-right:0px;
+  pointer-events: none;
+}
+.modal-open {
+  padding-right: 0px!important;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.modal-dialog {
+  pointer-events: auto;
+  justify-content: center;
+  width: auto;
+  margin: 0px;
+  max-height: -webkit-fill-available;
+}
+.modal-content {
+  max-height: -webkit-fill-available;
+  color: #000;
+  font-family: inherit;
+  border: 2px solid coral;
+  border-radius: 20px;
+  width: fit-content;
+  /*width: 100vw; check this out
+  height: 100vh;*/
+}
+.modal-header {
+  border-bottom: 2px solid blue;
+}
+.mca {
+  /*height: -webkit-fill-available;*/
+  width: 100%;
+}
+#exit-button {
+  font-size: 1em;
+}
 
+/*------------------------- END -------------------------*/
 
 
 
@@ -161,6 +213,7 @@ input[type=enter] {
   margin: 0px;
   padding: 0;
   z-index: -1;
+  
 }
 .dropdown:hover .dropdown-content {
   display: block;
@@ -299,31 +352,7 @@ a:hover {
 /*------------------------- END -------------------------*/
 
 
-/*---------------------- Modal-Form ---------------------*/
-.modal {
-  text-align: left;
-}
-.modal-dialog {
-  width: auto;
-}
-.modal-content {
-  color: #000;
-  font-family: inherit;
-  border: 2px solid coral;
-  border-radius: 20px;
-  width: fit-content;
-}
-.modal-header {
-  border-bottom: 2px solid blue;
-}
-.mca {
-  width: 100%;
-}
-#exit-button {
-  font-size: 1em;
-}
 
-/*------------------------- END -------------------------*/
 
 
 
@@ -344,6 +373,7 @@ a:hover {
   display: flex;
   align-items: center;
   background-color: transparent;
+  height:100vh;
 }
 .container-about{
   color: white;
@@ -482,9 +512,24 @@ a:hover {
   margin-bottom: 20px;
 }
 .carousel-item img { 
-  max-height: calc(100vw - 60px);
-
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding:0;
+  margin: 0;
 }
+/*#img2 {
+  transform: rotate(90deg);
+  min-height:100vw;
+  background-size: 170%;
+}
+  max-height: calc(100vw - 60px);
+  background-position-y: 0px;
+  background-repeat: no-repeat;
+  background-position-x: -30px;
+  
+  transform: rotate(90deg);
+*/
 
 /*#Caro-Ski-img-1 {
   background-image: url(../images/experience/img-climb1.JPG);
@@ -704,6 +749,8 @@ img {
   object-fit:cover;
   max-width: 100%;
   border-radius: 20px;
+  max-height: -webkit-fill-available;
+  /*width: -webkit-fill-available;*/
 }
 .row {
   margin-left: 0;
@@ -763,9 +810,10 @@ img {
   padding:0;
   margin: 0;
 }
-      .container-about {
+      /*.container-about {
         margin-bottom: 10px;
-      }
+      }*/
+
 #nav-about:before {
   background-image: linear-gradient(black, black), url(../images/experience/img-training3.JPG);
   background-blend-mode: saturation;
@@ -776,7 +824,7 @@ img {
   content: "";
   position: absolute;
   width: 200%;
-  top: 24%;
+  top: 27%;
   left: -50%;
   z-index: -1;
   padding:0;
@@ -813,6 +861,9 @@ img {
       .carousel-indicators {
       margin-bottom: 3px;
       }
+      .modal {
+        margin: 5px;
+      }
 /*------------------------------------- end of Carousel --*/
 
 /*--------------------------------------------------- end of experience --------*/
@@ -847,6 +898,9 @@ img {
       .modal-header {
         display: inline-flex;
         align-items: normal;
+      }
+      .modal {
+        margin: 5px;
       }
 /*---------------------------------------- Heading Logo --*/
 .fa-angle-double-left {
@@ -890,6 +944,10 @@ img {
 
       .container-about {
         margin-bottom: 50px;
+        margin-top: 52px;/*check carefully on all lanscape mobiles*/
+      }
+      .description {
+        margin-bottom: 0px;/*check carefully on all lanscape mobiles*/
       }
 #nav-about {
   background-image: linear-gradient(black, black), url(../images/experience/img-trainingc.jpg);
@@ -997,13 +1055,13 @@ margin-bottom: 3px;
         background-blend-mode: saturation;
         background-position: center;
         background-size: cover;
-        min-height:100vw;
+        min-height:102vw;
         transform: rotate(90deg);
         content: "";
         position: absolute;
-        width: 200%;
-        top: 28%;
-        left: -50%;
+        width: 220%;
+        top: 27%;
+        left: -60%;
         z-index: -1;
         padding:0;
         margin: 0;
@@ -1036,6 +1094,13 @@ margin-bottom: 3px;
       .carousel-indicators {
       margin-bottom: 3px;
       }
+      .modified-container {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+      .modal {
+        margin: 5px;
+      }
 /*-------------------------------------------------------- End of About --------*/
 
 /*------------------------------------------------------------ experience ------*/
@@ -1043,10 +1108,7 @@ margin-bottom: 3px;
         margin-left: -15px;
         margin-right: -15px;
       }
-      .modified-container {
-        padding-left: 0px;
-        padding-right: 0px;
-      }
+
 /*--------------------------------------------------- end of experience --------*/
 } 
 /*------------------------- END OF (min-width: 360px) (orientation: portrait)---*/
@@ -1057,6 +1119,7 @@ margin-bottom: 3px;
 
       .modal-dialog {
           min-width: 660px; /*formerly at 730px*/
+          max-width: none;
         }
 }
 /*--------------------------------------------------END OF (min-width: 576px)---*/
@@ -1269,7 +1332,6 @@ margin-right: 0px;
   
 .modal-dialog{
   max-width: 980px;
-  max-height: 700px;
   }
 
 
@@ -1337,7 +1399,11 @@ margin-right: 0px;
   .modal-dialog{
   max-width: 1250px;
   }
-
+  .modal-open {
+    padding-right: 0px!important;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
 }
 @media screen and (min-width: 1440px) { 
 .modal-dialog{

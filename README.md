@@ -114,7 +114,7 @@ Simple navigation bar - scroll pages
 - Climbing Icon 
 - Waist slimming icon
 - Tread mill machine 
-    - all on https://www.flaticon.com
+    - all on https, credit to www.flaticon.com
     - difficult to find one that's free, but in SVG, so i add into HTML.
     - tidy up the svg structure, and changes the color also "fill" to be white from none.
 
@@ -122,6 +122,8 @@ Simple navigation bar - scroll pages
 
 
 #### links
+
+    #####links here credit to as listed#####
 - www.tutorialrepublic.com
 - www.w3schools.com
 - www.getbootstrap.com

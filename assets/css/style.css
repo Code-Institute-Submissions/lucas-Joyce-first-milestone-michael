@@ -6,58 +6,60 @@ body {
     font-family:  'Fira Sans', 'Exo', sans-serif;
     font-size: 17px;
     color: whitesmoke;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, .7);
     height: 100%;
 }
-
-/*----------------- General Temporay Stuff --------------------*/
-
-/*
-<i class="fas fa-sign-language"></i>
-<i class="far fa-sign-language"></i>
-*/
-
+svg {
+  text-shadow: ( 3px 3px 2px rgba(0, 0, 0, .7));
+  filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+}
 
 /*---------------------- Modal-Form ---------------------*/
 
-.modal { /*this is the fix form that should be for all modal*/
+.modal { 
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.726);
+  background-color: transparent;
   top: 0;
   right: 0;
-  bottom: 0;
+  bottom: none; 
   left: 0;
   opacity: 1;
   z-index: 1050;
-  transition: all 0.3s;
-  text-align: left;
   margin:40px;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  text-shadow: none;
   padding: 0px;
   padding-right:0px;
   pointer-events: none;
+  text-align: left;
+  text-align: -webkit-left;
+  -moz-text-align: left;
+  -ms-text-align: left;
+  -o-text-align: left;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
 }
-.modal-open {
-  padding-right: 0px!important;
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
+
 .modal-dialog {
   pointer-events: auto;
   justify-content: center;
   width: auto;
   margin: 0px;
   max-height: -webkit-fill-available;
+  max-height: -moz-available;
 }
 .modal-content {
-  max-height: -webkit-fill-available;
+
   color: #000;
   font-family: inherit;
   border: 2px solid coral;
   border-radius: 20px;
+  max-height: -webkit-fill-available;
+  max-height: -moz-available;
   width: fit-content;
-  /*width: 100vw; check this out
-  height: 100vh;*/
+  width: -moz-fit-content;
 }
 .modal-header {
   border-bottom: 2px solid blue;
@@ -70,10 +72,14 @@ body {
   font-size: 1em;
 }
 
-/*------------------------- END -------------------------*/
+/*------------------------- END -------------------------
+-webkit-transition: height 300ms ease-in;
+	-moz-transition: height 300ms ease-in; 
+	-ms-transition: height 300ms ease-in;
+	-o-transition: height 300ms ease-in; 
+        transition: height 300ms ease-in;
 
-
-
+-webkit-*/
 /*--------------------------------------------------------------- BG-Colors ----------------------------------------------------------------*/
 
 #nav-index {
@@ -86,8 +92,9 @@ body {
     z-index: -6;
     padding: 0;
     margin: 0;
+    
 }
-#nav-about { /* NOTE- this is not Bg images due to Carousel */
+#nav-about { 
   padding: 0;
   display: flex;
 }
@@ -132,7 +139,7 @@ body {
   min-height:100vh;
 }
 #nav-contact {
-  background-image: linear-gradient(black, black), url(../images/about/carousel/surf.jpg);
+  background: linear-gradient(black, black), url(../images/about/carousel/surf.jpg);
   background-blend-mode: saturation;
   background-attachment: fixed;
   background-position: center;
@@ -140,6 +147,9 @@ body {
   padding:0;
   margin: 0;
   min-height:100vh;
+  display: flex;
+  flex-direction: column;
+
 }
 /*--------------------------------------------------------------- END ---------------------------------------------------------------------*/
 
@@ -195,6 +205,10 @@ input[type=enter] {
   border: 2px solid coral;
   color: coral;
   transition: background-color .10s ease-in-out, color .10s ease-in-out;
+  -webkit-transition: background-color .10s ease-in-out, color .10s ease-in-out;
+  -moz-transition: background-color .10s ease-in-out, color .10s ease-in-out;
+  -ms-transition: background-color .10s ease-in-out, color .10s ease-in-out;
+  -o-transition: background-color .10s ease-in-out, color .10s ease-in-out;
 }
 .dropdown {
   position: absolute;
@@ -218,6 +232,10 @@ input[type=enter] {
 .dropdown:hover .dropdown-content {
   display: block;
   transition: display .3s ease-in-out, color .3s ease-in-out;
+  -webkit-transition: display .3s ease-in-out, color .3s ease-in-out;
+  -moz-transition: display .3s ease-in-out, color .3s ease-in-out;
+  -ms-transition: display .3s ease-in-out, color .3s ease-in-out;
+  -o-transition: display .3s ease-in-out, color .3s ease-in-out;
 }
 .dropdown-item {
   font-family: inherit;
@@ -241,8 +259,14 @@ a:hover {
   text-decoration-line: none;
   background-color: transparent;
   transition: font-weight .3s ease-in-out, color .3s ease-in-out;
+  -webkit-transition: font-weight .3s ease-in-out, color .3s ease-in-out;
+  -moz-transition: font-weight .3s ease-in-out, color .3s ease-in-out;
+  -ms-transition: font-weight .3s ease-in-out, color .3s ease-in-out;
+  -o-transition: font-weight .3s ease-in-out, color .3s ease-in-out;
 }
 /*------------------------- END -------------------------*/
+
+
 
 /*======================================================== END OF Navigation ============================================================*/
 
@@ -269,6 +293,7 @@ a:hover {
     font-variant: small-caps;
     letter-spacing: 6px;
     padding-top: 20px;
+    text-shadow: 3px 2px black;
 }
 .block-divider {
     border-top: 4px solid #178bf7;
@@ -302,6 +327,9 @@ a:hover {
   text-align: center;
   text-align: -webkit-center;
   -moz-text-align: center;
+  -ms-text-align: center;
+  -o-text-align: center;
+  
   padding: 3px;
   word-spacing: 30px;
 }
@@ -328,6 +356,10 @@ a:hover {
   padding-bottom: 3px;
   width: 100%;
   text-align: center;
+  text-align: -webkit-center;
+  -moz-text-align: center;
+  -ms-text-align: center;
+  -o-text-align: center;
 }
 .backtofitness {
   padding-right: 0px;
@@ -382,8 +414,12 @@ a:hover {
   padding: 10px;
   border-radius: 20px;
   border: 2px solid coral;
-  background-color: rgba(189, 183, 183, 0.438);
+  background-color: rgba(189, 183, 183, 0.644);
   text-align: center;
+  text-align: -webkit-center;
+  -moz-text-align: center;
+  -ms-text-align: center;
+  -o-text-align: center;
 }
 
 
@@ -404,6 +440,10 @@ a:hover {
   background-position: bottom;
   background-repeat: no-repeat;
   filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
   z-index: -1;
 }
 
@@ -448,7 +488,7 @@ a:hover {
 }
 .card-a {
   border: 2px solid coral;
-  background-color: rgba(189, 183, 183, 0.438);
+  background-color: rgba(189, 183, 183, 0.644);
   height: 550px;
 }
 .card-item {
@@ -518,32 +558,6 @@ a:hover {
   padding:0;
   margin: 0;
 }
-/*#img2 {
-  transform: rotate(90deg);
-  min-height:100vw;
-  background-size: 170%;
-}
-  max-height: calc(100vw - 60px);
-  background-position-y: 0px;
-  background-repeat: no-repeat;
-  background-position-x: -30px;
-  
-  transform: rotate(90deg);
-*/
-
-/*#Caro-Ski-img-1 {
-  background-image: url(../images/experience/img-climb1.JPG);
-
-}
-  background-position: center;
-  background-size: 120%;
-
-
-#Caro-PT-img-1 {}
-
-#Caro-CI-img-1 {}
-
-#Caro-LG-img-1 {}*/
 
 /*----------------------------------------------------- END -----------------------------------------------*/
 
@@ -601,7 +615,7 @@ a:hover {
    flex-direction: column;
 }
 .media-body {
-  background-color: rgba(189, 183, 183, 0.438);
+  background-color: rgba(189, 183, 183, 0.644);
   border-radius: 20px;
   padding: 10px;
 }
@@ -614,6 +628,8 @@ a:hover {
   align-items:center;
   font-weight: bold;
   text-align: center;
+  text-align: -webkit-center;
+  -moz-text-align: center;
 }
 #img-block-1 {
   background-image: url(../images/testimonials/michaeleaston.png);
@@ -664,7 +680,7 @@ a:hover {
   max-width: none;
 }
 .card {
-  background-color: rgba(189, 183, 183, 0.438);
+  background-color: rgba(189, 183, 183, 0.644);
   flex: auto;
   border-radius: 15px;
   padding: 15px;
@@ -686,56 +702,96 @@ a:hover {
 
 
 /*------------------------------------------------------------------- BOOKING ------------------------------------------------------------------*/
+.container-btnsignin {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 /*-----------------------------------------------------------------END OF BOOKING --------------------------------------------------------------*/
 
 /*------------------------------------------------------------------- CONTACT ------------------------------------------------------------------*/
+#fullname,
+#emailaddress,
+#projectsummary {
+  border:3px solid coral;
+  margin: 5px;
+  background-image: linear-gradient(to right, rgba(255,0,0,0) 10%, rgba(255,127,80,0.15), rgba(255,0,0,0));
+
+}
+.navcontact {
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact-heading {
+  color: coral;
+  text-align: center;
+}
 /*-----------------------------------------------------------------END OF CONTACT --------------------------------------------------------------*/
 
 
 
 /*=============================================================== END OF JUMBOTRON  ============================================================*/
-
-
-
-
-
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+img {
+  padding: 0px;
+  object-fit:cover;
+  max-width: 100%;
+  border-radius: 20px;
+  max-height: -webkit-fill-available;
+}
 /*=================================================================== FOOTER  ==================================================================*/
-
-.footer-link {
-  position: relative;
-  background-attachment: scroll;
-  height:40px;
-  margin: 0;
-  padding: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  min-height: 100%;
+#bigrock,
+#surfking,
+#snowcenter,
+#hofnar,
+#boxend,
+#xsplash {
+display: none;
 }
-.expaind:hover {
-  height: 250px;
-  transition: height .3s ease-in-out, color .3s ease-in-out;
-  
+.fa-link {
+  height: 50px;
+  width: 50px;
 }
-.expaind {
-  height:40px;
-  transition: height .3s ease-in-out, color .3s ease-in-out;
+.slider {
+  display: flex;
+  height:50px;
+  padding-top: 8px;
+  background-color: grey;
   position: relative;
   bottom: 0px;
   left: 0;
   right:0;
-  padding-top: 8px;
   align-items: flex-start;
   margin-bottom: 0px;
-  background-color: grey;
   z-index: 1;
 }
+#dropupSlideContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+#dropupSlideButton {
+  margin-left: auto;
+  margin-right: 0;
+  font-size: 3em;
+  padding: 20px;
+  cursor: pointer;
+}
 .block-set {
-  display: inline-flex;
+  background-color: grey;
+  display: inline-flex; /*none*/
   padding: 0;
 }
 .link-items {
-  display: flex;
+  display: flex;/*none*/
   flex-direction: column;
   align-items: center;
 }
@@ -744,18 +800,82 @@ a:hover {
   padding-top: 0px;
   height:35px;
 }
-img {
-  padding: 0px;
-  object-fit:cover;
-  max-width: 100%;
-  border-radius: 20px;
-  max-height: -webkit-fill-available;
-  /*width: -webkit-fill-available;*/
-}
-.row {
-  margin-left: 0;
+/*
+#dropupSlideContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  bottom:-130px;/*-120px -255px
+  transform: translateY(0);
+  transition: transform .5s ease-in-out;
+  -webkit-transition: transform .5s ease-in-out;
+  -moz-transition: transform .5s ease-in-out;
+  -ms-transition: transform .5s ease-in-out;
+  -o-transition: transform .5s ease-in-out;
+}*/
+/*#dropupSlideContainer:hover  .slider  {
+  bottom:0px;
+  height: 230px;/*460px
+  display: flex;
+  transform: translateY(-100%);
+  transition: transform .5s ease-in-out;
+  -webkit-transition: transform .5s ease-in-out;
+  -moz-transition: transform .5s ease-in-out;
+  -ms-transition: transform .5s ease-in-out;
+  -o-transition: transform .5s ease-in-out;
+}*/
+/*:hover*/
+
+
+ /* margin-left: auto;
   margin-right: 0;
-}
+  font-size: 3em;
+  padding: 20px;
+  cursor: pointer;*/
+
+/*#dropupSlideContent { 
+  position: relative;
+  height:230px;
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-height: 100%;
+}*/
+/*.slider {
+  display: flex;
+  height:230px;/*8px
+  padding-top: 8px;
+  background-color: grey;
+  position: relative;
+  bottom: 0px;
+  left: 0;
+  right:0;
+  align-items: flex-start;
+  margin-bottom: 0px;
+  z-index: 1;
+  transform: translateY(0);
+  transition: transform .5s ease-in-out;
+  -webkit-transition: transform .5s ease-in-out;
+  -moz-transition: transform .5s ease-in-out;
+  -ms-transition: transform .5s ease-in-out;
+  -o-transition: transform .5s ease-in-out;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------footer stuff tryout here---------------------------*/
 
 /*============================================================ END OF FOOTER  ==================================================================*/
 
@@ -847,6 +967,9 @@ img {
         padding-left: 0px;
         padding-right: 0px;
       }
+      .card-a {
+        height:440px;
+      }
 
 /*------------------------------------------- Carousel --*/
       .carousel-caption {
@@ -891,6 +1014,7 @@ img {
       .mca {
         font-size: 14px;
         flex-direction: row;
+        height: -webkit-fill-available;
       }
       .modal-title {
         display: none;
@@ -898,10 +1022,12 @@ img {
       .modal-header {
         display: inline-flex;
         align-items: normal;
+        border-bottom: none;
       }
       .modal {
         margin: 5px;
       }
+
 /*---------------------------------------- Heading Logo --*/
 .fa-angle-double-left {
   font-size: 2.5em;
@@ -990,6 +1116,9 @@ margin-bottom: 3px;
   padding-left: 0px;
   padding-right: 0px;
 }
+.card-a {
+  height:400px;
+}
 /*--------------------------------------------------- end of experience --------*/
 } 
 /*------------------------------ END OF (min-width: 360px) (orientation: landscape)---*/
@@ -1040,8 +1169,6 @@ margin-bottom: 3px;
 /*------------------------------------ End of Navigation --*/
 
 /*-------------------------------------------------------------- About --------*/
-/*position: relative;
-        overflow: hidden;*/
 
       #nav-about {
         min-height:100vh;
@@ -1066,16 +1193,6 @@ margin-bottom: 3px;
         padding:0;
         margin: 0;
       }
-      /*#nav-about {
-        background-image: linear-gradient(black, black), url(../images/experience/img-climb3.JPG);
-        background-blend-mode: saturation;
-        background-attachment: scroll;
-        background-position: center;
-        background-size: cover;
-        padding:0;
-        margin: 0;
-        min-height:100vh;
-      }*/
       #profile-img {
         display:none;
       }
@@ -1108,6 +1225,9 @@ margin-bottom: 3px;
         margin-left: -15px;
         margin-right: -15px;
       }
+      .card-a {
+        height:440px;
+      }
 
 /*--------------------------------------------------- end of experience --------*/
 } 
@@ -1120,6 +1240,8 @@ margin-bottom: 3px;
       .modal-dialog {
           min-width: 660px; /*formerly at 730px*/
           max-width: none;
+          margin-left: auto;
+          margin-right: auto;
         }
 }
 /*--------------------------------------------------END OF (min-width: 576px)---*/
@@ -1184,7 +1306,7 @@ margin-bottom: 3px;
   display: block;
 }
 /*-------------------------------------------------------- End of About --------*/
-/*-------------------------------------------------------------- About --------*/
+/*-------------------------------------------------------------- ?????? --------*/
 .service-block {
   min-width: 375px;
 }
@@ -1292,6 +1414,9 @@ margin-right: 0px;
       .carousel-indicators {
         margin-bottom: 20px;
         }
+        .card-a {
+          height:440px;
+        }
 /*--------------------------------------------------- end of experience --------*/
 }
 /*--------------------------------------------------END OF (min-width: 768px)---*/
@@ -1332,6 +1457,8 @@ margin-right: 0px;
   
 .modal-dialog{
   max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
   }
 
 
@@ -1398,11 +1525,16 @@ margin-right: 0px;
 
   .modal-dialog{
   max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
   }
   .modal-open {
     padding-right: 0px!important;
     overflow-x: hidden;
     overflow-y: hidden;
+  }
+  .card-a {
+    height:440px;
   }
 }
 @media screen and (min-width: 1440px) { 
@@ -1410,23 +1542,12 @@ margin-right: 0px;
   max-height: 100%;
 }  
 
-
+.card-a {
+  height:440px;
+}
 }
 
 
 
 
 
-/*------------- Testimonials ------------*/
-/* orientation
-  @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
-    html {
-      transform: rotate(-90deg);
-      transform-origin: left top;
-      width: 100vh;
-      overflow-x: hidden;
-      position: absolute;
-      top: 100%;
-      left: 0;
-    }
-  }*/

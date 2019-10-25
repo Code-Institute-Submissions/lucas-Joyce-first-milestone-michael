@@ -35,7 +35,7 @@ and ease of use by planning through a sychonised calendar on Michael's organised
 
 I would like a calendar in different booking colors for Michael so he will know which area of sport.
 
-I would like to keep it minimized in mobile forms, such as carousals that shalt be retruct
+I would like to keep it minimized in mobile forms, such as carousals that shalt be restricted.
 
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -80,6 +80,7 @@ Simple navigation bar - scroll pages
     - certificated, professonal details.
 #### Booking
 6. sixth page
+    - sign in and display person icon
     - calendar
     - with bullet option morning, afternoon, evening.
 #### Contact
@@ -101,18 +102,24 @@ Simple navigation bar - scroll pages
 
 #### infomation on the origin source.
 
-- Ashion webpage portfolio - http://www.chitrakootweb.com/template/ashton/home07-light-side-nav.html#portfolio
+- Ashion webpage portfolio 
+    - http://www.chitrakootweb.com/template/ashton/home07-light-side-nav.html#portfolio
     - Ashton Hokes main front face, this will be home page (index.html)
-    - My experience html stucture, to use it as in "card" (bootstrap) with further info button directing to new page.
+    - My "experience" html stucture, to use it as in "card" (bootstrap) with further info button directing to new page.
 
-- Haley Schafer webpage portflio - https://code-institute-solutions.github.io/StudentExampleProjectGradeFive/
+- Haley Schafer webpage portflio 
+    - https://code-institute-solutions.github.io/StudentExampleProjectGradeFive/
     - i liked the jumbotron display, that the background images doesnt move, yet others moves.
 
-- Climbing Icon - https://www.flaticon.com
+- Climbing Icon 
+- Waist slimming icon
+- Tread mill machine 
+    - all on https://www.flaticon.com
     - difficult to find one that's free, but in SVG, so i add into HTML.
     - tidy up the svg structure, and changes the color also "fill" to be white from none.
 
 - Carousel the sliding effect i have add javastrap links in order for it to work.
+
 
 #### links
 - www.tutorialrepublic.com
@@ -120,8 +127,14 @@ Simple navigation bar - scroll pages
 - www.getbootstrap.com
 - www.tympanus.net
 - https://stackoverflow.com/questions/28791970/how-to-limit-the-height-of-the-modal
+- https://return-true.com/demos/popupfooter/
+- https://www.flaticon.com/authors/smashicons
+- http://jsfiddle.net/tolginho/EBqZv/5/
 
 ##### future feature to be add
-calendar to be sychonised and bookings comfirmation. probably in Javascripts.
 
-col automatic from  interested to add http://jsfiddle.net/tolginho/EBqZv/5/
+popup footer to be add in javascript as shown in list of links above.
+calendar to be sychonised and bookings comfirmation.  in Javascripts.
+calendar to be shown on the booking page as per month in relavant to member's booked day as greyed out.
+
+

@@ -22,15 +22,15 @@ For clients, Michael wanted to providing them a clear aim for their fitness goal
 In the experience section, I'd like them to see the action of what he does and what he do, also 
 in the service section, I want client to be able to quick read and visualised of what to expect from Michael, in simple sentence and visualised pictures.
 ### Skeleton
-[Index/About Wireframe](https://github.com/lucas-Joyce/first-milestone-michael/blob/assets/images/sketches/image0.jpeg)
+[Index/About Wireframe](https://github.com/lucas-Joyce/first-milestone-michael/blob/master/assets/images/sketches/image0.jpeg)
 
-[Experience Wireframe](https://github.com/lucas-Joyce/first-milestone-michael/blob/assets/images/sketches/image4.jpeg)
+[Experience Wireframe](https://github.com/lucas-Joyce/first-milestone-michael/blob/master/assets/images/sketches/image4.jpeg)
 
-[Tesimonials Wireframe](https://github.com/lucas-Joyce/first-milestone-michael/blob/assets/images/sketches/image3.jpeg)
+[Tesimonials Wireframe](https://github.com/lucas-Joyce/first-milestone-michael/blob/master/assets/images/sketches/image3.jpeg)
 
-[service Wireframe](https://github.com/lucas-Joyce/first-milestone-michael/blob/assets/images/sketches/image2.jpeg)
+[service Wireframe](https://github.com/lucas-Joyce/first-milestone-michael/blob/master/assets/images/sketches/image2.jpeg)
 
-[booking Wireframe](https://github.com/lucas-Joyce/first-milestone-michael/blob/assets/images/sketches/image1.jpeg)
+[booking Wireframe](https://github.com/lucas-Joyce/first-milestone-michael/blob/master/assets/images/sketches/image1.jpeg)
 ### Surface
 The greyscale colour was chosen for background to keep it away from distraction to the actual focuse on the contents,
 Coral orange and pale blue for display of buttons and borders, a clear target of where the buttons are, beside it's because Michael's favorite colour, so that's the theme.

@@ -8,6 +8,7 @@ Actual website can be found [here](https://www.backtothefitness.co.uk/).
 # UX 
 ## User Stories
 ### As a customer, I expect to see infomations of interest for my fitness goals.
+<img src="lucas-Joyce/first-milestone-michael/master/assets/images/service/serviceinfo.png" width="100">
 ![Service showcase](https://raw.githubusercontent.com/lucas-Joyce/first-milestone-michael/master/assets/images/service/serviceinfo.png "Service showcase")
 ![Experience showcase](https://raw.githubusercontent.com/lucas-Joyce/first-milestone-michael/master/assets/images/experience/experienceinfo.png "Experience showcase")
 ### Being Michael, I expect easy contacts and quick resquest booking in advance plannings, and what type of sport, and to hold the deposits.

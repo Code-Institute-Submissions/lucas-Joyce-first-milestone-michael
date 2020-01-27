@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link 
+        rel="stylesheet" 
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link 
+        rel="stylesheet" 
+        href="https://use.fontawesome.com/releases/v5.10.1/css/all.css" 
+        integrity="sha384-wxqG4glGB3nlqX0bi23nmgwCSjWIW13BdLUEYC4VIMehfbcro/ATkyDsF/AbIOVe" 
+        crossorigin="anonymous"
+        type="text/css"/>
+    <link 
+        rel="stylesheet" 
+        href="./assets/css/modaltest.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+
+    <title>Modal</title>
+</head>
+
+<body>
+    <section class="jumbotron jumbotron-fluid" id="nav-booking">
+        <div class="container">
+            <h2 class="section-title">Modal/Media Testing</h2>
+            <hr class="block-divider">
+        </div>
+        <input
+            class="btn btn-warning btn-ex"
+            type="button" 
+            value="skimodal"
+            data-toggle="modal" 
+            data-target="#Ski-modal"> 
+        <form>
+            <div class="modal" id="Ski-modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <label class="modal-title">Snowboarding and Skiing Instructing</label>
+                            <i class="crossx fas fa-times" data-dismiss="modal"></i>
+                        </div>
+                        <div class="modal-body">
+                            <div id="Caro-Ski" class="carousel" data-ride="carousel">
+                                <ul class="carousel-indicators">
+                                    <li data-target="#Caro-Ski" data-slide-to="0" class="active"></li>
+                                    <li data-target="#Caro-Ski" data-slide-to="1"></li>
+                                    <li data-target="#Caro-Ski" data-slide-to="2"></li>
+                                </ul>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./assets/images/experience/img-snow1.jpg" alt="indoor Climbing">
+                                        <div class="carousel-caption">
+                                            <h3>Instructing Tom</h3>
+                                            <p>
+                                                We had such a great time at Big Rock!
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./assets/images/experience/Obstalces.jpg" alt="obstalces" />
+                                        <div class="carousel-caption">
+                                            <h3>Outdoor Fun!</h3>
+                                            <p>Blissful Sunshine!</p>
+                                        </div>   
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./assets/images/experience/img-snow3.jpg"  alt="Lead climbing">
+                                        <div class="carousel-caption">
+                                            <h3>Instruct how to Lead Climbing.</h3>
+                                            <p>Fabulous learning curves!</p>
+                                        </div>   
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#Caro-Ski" data-slide="prev">
+                                    <span><i class="fas fa-chevron-circle-left"></i></span>
+                                </a>
+                                <a class="carousel-control-next" href="#Caro-Ski" data-slide="next">
+                                    <span><i class="fas fa-chevron-circle-right"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>

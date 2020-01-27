@@ -1,0 +1,80 @@
+.modal {
+    text-align: center;
+}
+.modal-dialog {
+    display: flex;
+    justify-content: center;
+    max-width: max-content; /* this is to auto width of the picture */
+    margin-left: auto;
+    margin-right: auto; 
+}
+.modal-content {
+    color: #000;
+    font-family: inherit;
+    border: 2px solid coral;
+    border-radius: 20px;
+    max-height: 90vh;
+}
+.modal-header {
+    border-bottom: 2px solid blue;
+}
+.crossx {
+    position: absolute;
+    color: black;
+    top: 0; right: 0;
+    padding: 10px;
+    z-index: 2;
+    font-size: 2em;
+}
+ .modal-body { /* this is to fill whole picture*/
+    padding:0px;
+}
+.carousel-item {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+img {
+  text-align: center;
+}
+.carousel-item.active {
+  margin: auto;
+}
+.carousel-indicators {
+    margin-bottom: 20px;
+}
+.carousel-indicators li {
+    width: 70px;
+    height: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.modal-footer {
+    border-top: 2px solid blue;
+}
+
+.fa-chevron-circle-left,
+.fa-chevron-circle-right {
+  font-size: large;
+  padding: 10px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  border-radius: 20px;
+  background-color: transparent;
+}
+.jumbotron {
+  text-align: center;
+}
+.modal-body img {
+  max-height: 70vh;
+}
+.section-title {
+  text-align: center;
+}
